@@ -8,6 +8,9 @@
 
 
     <style type="text/css">
+        table{
+            margin-top:35%;
+        }
         table tr th {
             padding: 15px;
             border: 2px solid #000;
@@ -27,7 +30,7 @@
         }
 
         table tbody {
-            margin-left:35%;
+            margin-top:35%;
             padding: 15px;
             border: 2px solid #000;
             border-top: 2px solid #000;
@@ -38,7 +41,11 @@
         }
     </style>
 
-  <link rel="stylesheet" href="../css/StyleSheet.css">
+  <link rel="stylesheet" href="../css/nav.css">
+
+    <link rel="stylesheet" href="../css/listaAdmi.css" />
+    <link rel="stylesheet" href="../loading.css" >
+    <link rel="stylesheet" href="../css/lateral.css" />
 
 
     <title>listar usuarios</title>
