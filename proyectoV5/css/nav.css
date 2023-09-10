@@ -2,8 +2,8 @@
 
 #header {
     margin: auto;
-    width: 900px;
-    font-family: 'Courier New', Courier, monospace;
+    /*width: 900px;
+    font-family: 'Courier New', Courier, monospace*/;
 }
 
 ul, ol {
@@ -12,7 +12,7 @@ ul, ol {
 
 .nav li a {
     background-color: lightgreen;
-    color: #fff;
+    color: black;
     text-decoration: none;
     padding: 10px 15px;
     display: block;
@@ -23,7 +23,7 @@ ul, ol {
     }
 
 .nav > li {
-    float: left;
+    float: right;
 }
 
 .nav li ul {
@@ -37,7 +37,7 @@ ul, ol {
 }
 
 .nav li ul li {
-    position: relative;
+    position: center;
 }
     /* para activar la opcion del sub menu dentro del menu */
     .nav li ul li ul {

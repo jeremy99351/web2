@@ -2,49 +2,50 @@
 
 <!DOCTYPE html>
 
-<html">
+<html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
     <style type="text/css">
-        table{
-            margin-top:15%;
-        }
-        table tr th {
-            padding: 15px;
-            border: 2px solid #000;
-            border-top: 2px solid #000;
-            width: 4%;
-            right: 90px;
-            background: lightblue;
+        table {
+            margin-top: 15%;
         }
 
-        table tr td {
-            padding: 15px;
-            border: 2px solid #000;
-            border-top: 2px solid #000;
-            width: 4%;
-            right: 150px;
-            background: transparent;
-        }
+            table tr th {
+                padding: 15px;
+                border: 2px solid #000;
+                border-top: 2px solid #000;
+                width: 4%;
+                right: 90px;
+                background: lightblue;
+            }
 
-        table tbody {
-            margin-top:15%;
-            padding: 15px;
-            border: 2px solid #000;
-            border-top: 2px solid #000;
-            width: 4%;
-            right: 150px;
-            background: transparent;
-            /* background: #F2F2F2; */
-        }
+            table tr td {
+                padding: 15px;
+                border: 2px solid #000;
+                border-top: 2px solid #000;
+                width: 4%;
+                right: 150px;
+                background: transparent;
+            }
+
+            table tbody {
+                margin-top: 15%;
+                padding: 15px;
+                border: 2px solid #000;
+                border-top: 2px solid #000;
+                width: 4%;
+                right: 150px;
+                background: transparent;
+                /* background: #F2F2F2; */
+            }
     </style>
 
-  <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/nav.css">
 
     <link rel="stylesheet" href="../css/listaAdmi.css" />
-    <link rel="stylesheet" href="../loading.css" >
+    <link rel="stylesheet" href="../loading.css">
     <link rel="stylesheet" href="../css/lateral.css" />
 
 
@@ -53,7 +54,7 @@
 <body>
 
 
- <%--   <div class="navbar_lateral">
+    <%--   <div class="navbar_lateral">
         <a href="index.html">
             <img src="../img/escudo.jfif" alt="Escudo.jfjf"></a>
 
@@ -69,7 +70,7 @@
 
 
     </div>
---%>
+    --%>
 
 
     <form id="form1" runat="server">
@@ -91,7 +92,7 @@
                 </li>
 
 
-                <li><a >Ver Listas</a>
+                <li><a>Ver Listas</a>
                     <ul>
                         <li><a href="listarSeccion.aspx">Ver Grupos</a></li>
                         <li><a href="listarEstudiantes.aspx">Ver Estudiantes</a></li>
