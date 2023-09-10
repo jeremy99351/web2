@@ -27,6 +27,7 @@
         }
 
         table tbody {
+            margin-left:35%;
             padding: 15px;
             border: 2px solid #000;
             border-top: 2px solid #000;
@@ -37,11 +38,7 @@
         }
     </style>
 
-    <link rel="stylesheet" href="../css/listaAdmi.css" />
-    <link rel="stylesheet" href="../loading.css" />
-    <link rel="stylesheet" href="../css/lateral.css" />
-
-    <link rel="stylesheet" href="../css/nav.css" />
+  <link rel="stylesheet" href="../css/StyleSheet.css" />
 
 
     <title>listar usuarios</title>

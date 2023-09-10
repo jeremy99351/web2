@@ -1,15 +1,76 @@
 ﻿
-/*Estilos de los contenedor del index del navbar lateral 
-* Estilos del navbar lateral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#header {
+    margin: auto;
+    //width: 900px;
+    // font-family: 'Courier New', Courier, monospace;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.nav li a {
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+    .nav li a:hover {
+        background-color: transparent;
+    }
+
+.nav > li {
+    float: left;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+    /* para activar la opcion del sub menu dentro del menu */
+    .nav li ul li ul {
+        right: -140px;
+        top: 0px;
+    }
+
+
 .navbar_lateral {
-   height:100%;
+    height: 100%;
+    width: 30%;
+    margin-right: 15px;
     /* margin-top: none; */
-   
     /* Que ocupe todo el ancho de la pantalla */
-  
     /*Definir el ancho del navbar */
     position: absolute;
-   /* Fija el navbar, que no se mueva con el scroll */
+    /* Fija el navbar, que no se mueva con el scroll */
     z-index: 1;
     /* Se mantiene en la parte superior */
     left: 0;
@@ -40,7 +101,7 @@
 
     .navbar_lateral img {
         width: 80%;
-        height: 175px;
+        height: 150px;
         margin-left: 10%;
         margin-top: 20px;
         background: transparent;
