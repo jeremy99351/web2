@@ -136,7 +136,7 @@ button {
     }
 
 
-table {
+uin-left: au {
     background: transparent;
     font-size: 20px;
     font-weight: bolder;
@@ -147,30 +147,30 @@ table {
     margin-bottom: 0;
 }
 
-    table tr th {
-        padding: 15px;
-        border: 2px solid #000;
-        border-top: 2px solid #000;
-        width: 4%;
-        right: 90px;
-        background: lightblue;
-    }
+table tr th {
+    padding: 15px;
+    border: 2px solid #000;
+    border-top: 2px solid #000;
+    width: 4%;
+    right: 90px;
+    background: lightblue;
+}
 
-    table tr td {
-        padding: 15px;
-        border: 2px solid #000;
-        border-top: 2px solid #000;
-        width: 4%;
-        right: 150px;
-        background: transparent;
-    }
+table tr td {
+    padding: 15px;
+    border: 2px solid #000;
+    border-top: 2px solid #000;
+    width: 4%;
+    right: 150px;
+    background: transparent;
+}
 
-    table tbody {
-        padding: 15px;
-        border: 2px solid #000;
-        border-top: 2px solid #000;
-        width: 4%;
-        right: 150px;
-        background: transparent;
-        /* background: #F2F2F2; */
-    }
+table tbody {
+    padding: 15px;
+    border: 2px solid #000;
+    border-top: 2px solid #000;
+    width: 4%;
+    right: 150px;
+    background: transparent;
+    /* background: #F2F2F2; */
+}

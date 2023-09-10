@@ -2,11 +2,11 @@
 /*Estilos de los contenedor del index del navbar lateral 
 * Estilos del navbar lateral */
 .navbar_lateral {
-    float: left;
+   height:100%;
     /* margin-top: none; */
-    height: 580px;
+   
     /* Que ocupe todo el ancho de la pantalla */
-    width: 15%;
+  
     /*Definir el ancho del navbar */
 /*    position: fixed;
 */    /* Fija el navbar, que no se mueva con el scroll */

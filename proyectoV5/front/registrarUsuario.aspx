@@ -7,15 +7,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <link rel="stylesheet" href="../css/nav.css" />
-    <link rel="stylesheet" href="../css/listaAdmi.css" />
-   
-    
+
+
+
 
     <title>Registro de usuario</title>
 </head>
 
 <body>
-    <div>
+    <div class="gen">
 
         <div>
             <ul class="nav">
@@ -45,9 +45,65 @@
 
                 <li><a>Configuraciones</a></li>
             </ul>
-       </div>
+        </div>
 
         <form id="form1" runat="server">
+
+
+            <main class="main">
+                <div class="slidershow-container">
+
+                    <div id="divisor"></div>
+                    <!--primer contenedor-->
+                    <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <div class="contenedor">
+                            <div class="descripcion_contenedor">
+                                <p></p>
+                            </div>
+
+                            <div class="contenido">
+
+                                <h1>LISTA DE ESTUDIANTES </h1>
+                                <div class="separador"></div>
+
+                                <div class="contenedor_filtraciones">
+
+                                    <div class="contenedor_buscar">
+
+
+                                        <select name="grupos" id="grupos">
+                                            <option value="">Seleccione un nivel</option>
+                                            <option value="1">Primer grado</option>
+                                            <option value="2">Segundo grado</option>
+                                            <option value="3">Tercer grado</option>
+                                            <option value="4">Cuarto grado</option>
+                                            <option value="5">Quinto grado</option>
+                                            <option value="6">Sexto grado</option>
+                                            <option value="7">Setimo año</option>
+                                            <option value="8">Octavo año</option>
+                                            <option value="9">Noveno año</option>
+                                            <option value="10">Decimo año</option>
+
+                                        </select>
+                                        <input type="text" id="txt_filtar">
+
+                                        <!-- <label for="txt_filtar">Buscar: </label>
+                                <input type="text" id="txt_filtar"> -->
+                                        <button class="btn_buscar" id="btnBuscar">BUSCAR</button>
+                                    </div>
+
+                                </div>
+                                <div>
+
+                                    <table id="tabla">
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
 
 
 
