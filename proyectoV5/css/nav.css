@@ -23,7 +23,7 @@ ul, ol {
     }
 
 .nav > li {
-    float: right;
+    float: left;
 }
 
 .nav li ul {
