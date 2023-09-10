@@ -1,6 +1,8 @@
 ﻿
 
 #header {
+
+    margin-top: 5%;
     margin: auto;
     /*width: 900px;
     font-family: 'Courier New', Courier, monospace*/;
@@ -11,6 +13,7 @@ ul, ol {
 }
 
 .nav li a {
+    position:center;
     background-color: lightgreen;
     color: black;
     text-decoration: none;
@@ -19,7 +22,7 @@ ul, ol {
 }
 
     .nav li a:hover {
-        background-color: transparent;
+        background-color: lavender;
     }
 
 .nav > li {
@@ -34,6 +37,7 @@ ul, ol {
 
 .nav li:hover > ul {
     display: block;
+
 }
 
 .nav li ul li {

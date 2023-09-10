@@ -10,7 +10,22 @@
     <style type="text/css">
         table {
             margin-top: 25%;
+            backdrop-filter: brightness(0.6);
         }
+
+            table input {
+                width: 100%;
+                height: 45px;
+                background-color: lavender;
+                border: none;
+                outline: none;
+                border-radius: 40px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+                cursor: pointer;
+                font-size: 16px;
+                color: #333;
+                font-weight: 600;
+            }
 
             table tr th {
                 padding: 15px;
@@ -28,6 +43,7 @@
                 width: 4%;
                 right: 150px;
                 background: transparent;
+                color: white;
             }
 
             table tbody {
@@ -44,9 +60,8 @@
 
     <link rel="stylesheet" href="../css/nav.css">
 
-    <link rel="stylesheet" href="../css/listaAdmi.css" />
     <link rel="stylesheet" href="../loading.css">
-    <link rel="stylesheet" href="../css/lateral.css" />
+    <link rel="stylesheet" href="../css/listaAdmi.css" />
 
 
     <title>listar usuarios</title>
@@ -75,7 +90,7 @@
 
     <form id="form1" runat="server">
 
-        <div>
+        <div class="contenedor_filtraciones">
             <ul class="nav">
 
                 <li><a>Registrar Usuarios</a>
@@ -104,7 +119,19 @@
                 <li><a>Configuraciones</a></li>
             </ul>
         </div>
+
+
+
+         <div class="contenedor_buscar">
+            <label for="txt_filtrar">Buscar</label>
+            <input type="text" id="txt_filtrar" onfocus />
+             <br />
+            <button class="btn_buscar" id="btnBuscar"> BUSCAR</button>
+
+        </div>
         <br />
+
+       
 
         <asp:GridView ID="gdvUsuarios" runat="server" AutoGenerateColumns="False"
             OnRowEditing="ModificarFila" OnRowUpdating="ActualizarFila" OnRowCancelingEdit="CancelarEdicion"
@@ -161,8 +188,10 @@
                     </EditItemTemplate>
 
                 </asp:TemplateField>
-                <asp:CommandField HeaderText="Operaciones" ShowHeader="True" ShowEditButton="True" />
+                <asp:CommandField HeaderText="Accion" ShowHeader="True" ShowEditButton="True" ButtonType="Button" />
             </Columns>
+
+            <EditRowStyle BackColor="White" />
 
         </asp:GridView>
 
