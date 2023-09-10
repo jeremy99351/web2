@@ -9,7 +9,7 @@
 
     <style type="text/css">
         table{
-            margin-top:35%;
+            margin-top:15%;
         }
         table tr th {
             padding: 15px;
@@ -30,7 +30,7 @@
         }
 
         table tbody {
-            margin-top:35%;
+            margin-top:15%;
             padding: 15px;
             border: 2px solid #000;
             border-top: 2px solid #000;
@@ -53,7 +53,7 @@
 <body>
 
 
-    <div class="navbar_lateral">
+ <%--   <div class="navbar_lateral">
         <a href="index.html">
             <img src="../img/escudo.jfif" alt="Escudo.jfjf"></a>
 
@@ -69,7 +69,7 @@
 
 
     </div>
-
+--%>
 
 
     <form id="form1" runat="server">
@@ -91,7 +91,7 @@
                 </li>
 
 
-                <li><a href="">Ver Listas</a>
+                <li><a >Ver Listas</a>
                     <ul>
                         <li><a href="listarSeccion.aspx">Ver Grupos</a></li>
                         <li><a href="listarEstudiantes.aspx">Ver Estudiantes</a></li>
