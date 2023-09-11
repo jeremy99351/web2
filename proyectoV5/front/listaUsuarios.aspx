@@ -68,70 +68,51 @@
 </head>
 <body>
 
-
-    <%--   <div class="navbar_lateral">
-        <a href="index.html">
-            <img src="../img/escudo.jfif" alt="Escudo.jfjf"></a>
-
-        <div id="navbar_lateral_inicio"><a href="index.html">INICIO</a></div>
-        <div id="navbar_lateral_inicio"><a href="listaAdmi.html">Top ausencias</a></div>
-        <div id="navbar_lateral_inicio"><a href="lista_grupo.html">Lista de Grupos </a></div>
-        <div id="navbar_lateral_inicio"><a href="registrar_ausccencia.html">Registrar Aucencia</a></div>
-        <div id="navbar_lateral_inicio">
-            <a href="aucencia_por grupo.html">Aucencia por Grupo</a>
-        </div>
-        <div id="navbar_lateral_inicio"><a href="mi_horario.html">Mi Horario</a></div>
-        <div id="navbar_lateral_inicio"><a href="verHorario.html">Ver horario</a></div>
-
-
-    </div>
-    --%>
-
-
     <form id="form1" runat="server">
 
         <div class="contenedor_filtraciones">
-            <ul class="nav">
+            <div id="header">
+                <ul class="nav">
 
-                <li><a>Registrar Usuarios</a>
-                    <ul>
-                        <li><a href="registrarUsuario.aspx">Usuario Especial</a></li>
-                        <li><a href="registrarEstudiante.aspx">Estudiante</a></li>
-                        <li><a href="registrarDocente.aspx">Docente</a></li>
+                    <li><a>Registrar Usuarios</a>
+                        <ul>
+                            <li><a href="registrarUsuario.aspx">Usuario Especial</a></li>
+                            <li><a href="registrarEstudiante.aspx">Estudiante</a></li>
+                            <li><a href="registrarDocente.aspx">Docente</a></li>
 
-                    </ul>
-                </li>
+                        </ul>
+                    </li>
 
-                <li><a href="registrarSeccion.aspx">Crear Grupos</a>
+                    <li><a href="registrarSeccion.aspx">Crear Grupos</a>
 
-                </li>
+                    </li>
 
 
-                <li><a>Ver Listas</a>
-                    <ul>
-                        <li><a href="listarSeccion.aspx">Ver Grupos</a></li>
-                        <li><a href="listarEstudiantes.aspx">Ver Estudiantes</a></li>
-                        <li><a href="listaDocente.aspx">Ver Docentes</a></li>
-                        <li><a href="listaUsuarios.aspx">Ver Usuarios Especiales</a></li>
-                    </ul>
-                </li>
+                    <li><a>Ver Listas</a>
+                        <ul>
+                            <li><a href="listarSeccion.aspx">Ver Grupos</a></li>
+                            <li><a href="listarEstudiantes.aspx">Ver Estudiantes</a></li>
+                            <li><a href="listaDocente.aspx">Ver Docentes</a></li>
+                            <li><a href="listaUsuarios.aspx">Ver Usuarios Especiales</a></li>
+                        </ul>
+                    </li>
 
-                <li><a>Configuraciones</a></li>
-            </ul>
+                    <li><a>Configuraciones</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="contenedor_buscar">
+                <label for="txt_filtrar">Buscar</label>
+                <input type="text" id="txt_filtrar" onfocus />
+                <br />
+                <button class="btn_buscar" id="btnBuscar">BUSCAR</button>
+
+            </div>
+            <br />
         </div>
 
-
-
-         <div class="contenedor_buscar">
-            <label for="txt_filtrar">Buscar</label>
-            <input type="text" id="txt_filtrar" onfocus />
-             <br />
-            <button class="btn_buscar" id="btnBuscar"> BUSCAR</button>
-
-        </div>
-        <br />
-
-       
 
         <asp:GridView ID="gdvUsuarios" runat="server" AutoGenerateColumns="False"
             OnRowEditing="ModificarFila" OnRowUpdating="ActualizarFila" OnRowCancelingEdit="CancelarEdicion"
