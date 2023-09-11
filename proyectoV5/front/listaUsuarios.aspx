@@ -59,7 +59,6 @@
     </style>
 
     <link rel="stylesheet" href="../css/nav.css">
-
     <link rel="stylesheet" href="../loading.css">
     <link rel="stylesheet" href="../css/listaAdmi.css" />
 

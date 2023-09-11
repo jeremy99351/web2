@@ -5,6 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
     <style type="text/css">
         table {
             margin-top: 25%;
@@ -57,61 +59,75 @@
     </style>
 
     <link rel="stylesheet" href="../css/nav.css">
-
     <link rel="stylesheet" href="../loading.css">
     <link rel="stylesheet" href="../css/listaAdmi.css" />
 
 
-    <title>Lista de Docentes</title>
+    <title>Lista  Gneral de Docentes</title>
 </head>
 <body>
 
     <form id="form1" runat="server">
 
         <div class="contenedor_filtraciones">
-            <ul class="nav">
+            <div id="header">
+                <ul class="nav">
 
-                <li><a>Registrar Usuarios</a>
-                    <ul>
-                        <li><a href="registrarUsuario.aspx">Usuario Especial</a></li>
-                        <li><a href="registrarEstudiante.aspx">Estudiante</a></li>
-                        <li><a href="registrarDocente.aspx">Docente</a></li>
+                    <li><a>Registrar Usuarios</a>
+                        <ul>
+                            <li><a href="registrarUsuario.aspx">Usuario Especial</a></li>
+                            <li><a href="registrarEstudiante.aspx">Estudiante</a></li>
+                            <li><a href="registrarDocente.aspx">Docente</a></li>
 
-                    </ul>
-                </li>
+                        </ul>
+                    </li>
 
-                <li><a href="registrarSeccion.aspx">Crear Grupos</a>
+                    <li><a href="registrarSeccion.aspx">Crear Grupos</a>
 
-                </li>
+                    </li>
 
 
-                <li><a>Ver Listas</a>
-                    <ul>
-                        <li><a href="listarSeccion.aspx">Ver Grupos</a></li>
-                        <li><a href="listarEstudiantes.aspx">Ver Estudiantes</a></li>
-                        <li><a href="listaDocente.aspx">Ver Docentes</a></li>
-                        <li><a href="listaUsuarios.aspx">Ver Usuarios Especiales</a></li>
-                    </ul>
-                </li>
+                    <li><a>Ver Listas</a>
+                        <ul>
+                            <li><a href="listarSeccion.aspx">Ver Grupos</a></li>
+                            <li><a href="listarEstudiantes.aspx">Ver Estudiantes</a></li>
+                            <li><a href="listaDocente.aspx">Ver Docentes</a></li>
+                            <li><a href="listaUsuarios.aspx">Ver Usuarios Especiales</a></li>
+                        </ul>
+                    </li>
 
-                <li><a>Configuraciones</a></li>
-            </ul>
+                    <li><a>Configuraciones</a></li>
+                </ul>
+            </div>
+
+
+
+            <div class="contenedor_buscar">
+                <label for="txt_filtrar">Buscar</label>
+                <input type="text" id="txt_filtrar" onfocus />
+                <br />
+                <button class="btn_buscar" id="btnBuscar">BUSCAR</button>
+
+            </div>
+            <br />
         </div>
 
 
 
-        <div class="contenedor_buscar">
+       <%-- <div class="contenedor_buscar">
             <label for="txt_filtrar">Buscar</label>
             <input type="text" id="txt_filtrar" onfocus />
             <br />
             <button class="btn_buscar" id="btnBuscar">BUSCAR</button>
 
-        </div>
+        </div>--%>
         <br />
 
 
 
-        <asp:GridView ID="gdvDocente" runat="server" AutoGenerateColumns="False" OnRowEditing="ModificarFila" OnRowUpdating="ActualizarFila" OnRowCancelingEdit="CancelarEdicion" DataKeyNames="cedula_docente" Width="1171px">
+        <asp:GridView ID="gdvDocente" runat="server" AutoGenerateColumns="False"
+            OnRowEditing="ModificarFila" OnRowUpdating="ActualizarFila" OnRowCancelingEdit="CancelarEdicion"
+            DataKeyNames="cedula_docente">
             <Columns>
                 <asp:TemplateField HeaderText="Identificacion">
                     <ItemTemplate>
