@@ -5,9 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
     <link rel="stylesheet" href="../loading.css" />
     <link rel="stylesheet" href="../css/listaAdmi.css" />
     <link rel="stylesheet" href="../css/nav.css" />
+
     <title>registro de aucenia</title>
 </head>
 <body>
@@ -54,28 +56,21 @@
                     <asp:TextBox ID="txtEstudiante" runat="server"></asp:TextBox>
                     <i class='bx bxs-user'></i>
                 </div>
-                <br />
+
 
                 <div class="input-box">
                     <asp:Label ID="lblCantidad" runat="server" Text="Cnatidad de auncencia"></asp:Label>
                     <asp:TextBox ID="txtCantidad" runat="server"></asp:TextBox>
                     <i class='bx bxs-user'></i>
                 </div>
-                <br />
+
 
                 <div class="input-box">
                     <asp:Label ID="lblMateria" runat="server" Text="Materia"></asp:Label>
                     <asp:TextBox ID="txtMateria" runat="server"></asp:TextBox>
                     <i class='bx bxs-user'></i>
                 </div>
-                <br />
 
-                <div class="input-box">
-
-                    <asp:Calendar ID="cldFecha" runat="server" SelectedDate="09/06/2023 22:18:14" VisibleDate="2023-09-06"></asp:Calendar>
-                    <i class='bx bxs-user'></i>
-                </div>
-                <br />
 
                 <div class="input-box">
 
@@ -83,13 +78,18 @@
 
                     <i class='bx bxs-user'></i>
                 </div>
-                <br />
+
+
+
+
 
                 <asp:Button ID="btn_registrar" class="btn" runat="server" Text="Registrar" OnClick="btn_registrar_Click" />
 
             </form>
 
         </div>
+
+
 
     </form>
 </body>

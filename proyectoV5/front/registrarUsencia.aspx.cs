@@ -55,11 +55,11 @@ public partial class front_registrarUsencia : System.Web.UI.Page
         //Console.WriteLine("Today is " + thisDate1.ToString("MMMM dd, yyyy") + ".");
 
          
-        
+        string mifecha = DateTime.Now.ToShortDateString();
 
         conexionBD.Open();
         MySqlCommand cmd = new MySqlCommand("insert into aucensia  (fecha,tipo_au,cant_au,cedula_estudiante,cod_materia) values ('"
-          + cldFecha.SelectedDate.ToShortDateString() + "','" + DropDownList1.SelectedItem.Value.ToString() + "',' " + Convert.ToInt32(txtCantidad.Text) +
+          + mifecha + "','" + DropDownList1.SelectedItem.Value.ToString() + "',' " + Convert.ToInt32(txtCantidad.Text) +
           "','" + txtEstudiante.Text + "','" + txtMateria.Text + "')", conexionBD);
 
         cmd.ExecuteReader();
