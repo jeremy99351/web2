@@ -1,0 +1,50 @@
+create database Proyecto;
+use proyecto;
+
+create table usuario(tipo_usuario varchar (20) not null, cod_usuario varchar(50) primary key);
+
+create table usuario_mantenimiento(cedula_mantenimiento varchar(50) primary key, nombre varchar(50) not null, primer_apellido varchar(50) not null,
+segundo_apellido varchar(50), cod_usuario varchar(50) not null );
+alter table usuario_mantenimiento add ( correo varchar(50));
+alter table usuario_mantenimiento add foreign key(cod_usuario) references usuario(cod_usuario);
+
+create table materia (cod_materia varchar(10) primary key, nombre_materia varchar(50) not null);
+alter table materia add nivel_materia varchar(10);
+
+create table usuario_docente (cedula_docente varchar(50) primary key, nombre varchar(50) not null, primer_apellido varchar(50) not null,
+segundo_apellido varchar(50), cod_usuario varchar(50) not null,cod_materia varchar(10) not null);
+alter table usuario_docente add foreign key(cod_materia) references materia(cod_materia);
+alter table usuario_docente add correo varchar(50) ;
+
+create table seccion ( cod_seccion varchar(20) primary key, doce_guia varchar(50) not null,
+constraint fk_cedulaD foreign key (doce_guia) references usuario_docente(cedula_docente));
+
+create table usuario_estudiante ( cedula_estudiante varchar(50) primary key, nombre varchar(50) not null, primer_apellido varchar(50) not null,
+segundo_apellido varchar(50), cod_usuario varchar(50) not null,cod_seccion varchar(20) not null, correo varchar(50));
+alter table usuario_estudiante add foreign key (cod_usuario) references usuario(cod_usuario);
+alter table usuario_estudiante add foreign key(cod_seccion) references seccion(cod_seccion);
+
+create table aucensia( cod_ausencia integer auto_increment primary key,fecha varchar(50) not null,tipo_au varchar(20),
+cant_au int, cedula_estudiante varchar(50)not null,cod_materia varchar(10) not null ,
+constraint fk_estudiante foreign key (cedula_estudiante) references usuario_estudiante(cedula_estudiante),
+constraint fk_materia foreign key (cod_materia) references materia(cod_materia) );
+
+insert into usuario values('MANTENIMIENTO', 'm4nt3');
+insert into usuario values('ADMINISTRATIVO', '4dm1n');
+insert into usuario values('DOCENTE', 'd0c3n');
+insert into usuario values('ESTUDIANTE', '3st24');
+
+insert into usuario_mantenimiento values("155826720430","jeremy","alvarez","cruz","m4nt3","jeremy99ps35@gmail.com");
+
+
+
+select nombre,primer_apellido,cod_usuario from usuario_mantenimiento
+ where cedula_mantenimiento = '155826720430' and cod_usuario = 'm-01';
+ 
+select * from usuario_mantenimiento;
+select * from materia;
+select * from usuario;
+select * from usuario_docente;
+select * from seccion;
+select * from usuario_estudiante;
+select * from aucensia;

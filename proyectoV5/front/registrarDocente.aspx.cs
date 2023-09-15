@@ -69,6 +69,7 @@ public partial class front_registrarDocente : System.Web.UI.Page
             conexionBD.Open();
             ddlMateria.DataSource = cmd.ExecuteReader();
             ddlMateria.DataTextField = "nombre_materia";
+            ddlMateria.DataTextField = ddlMateria.DataTextField + "nivel_materia";
             ddlMateria.DataValueField = "cod_materia";
             ddlMateria.DataBind();
 
