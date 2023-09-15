@@ -81,10 +81,8 @@
 
                         </ul>
                     </li>
-
-                    <li><a href="registrarSeccion.aspx">Crear Grupos</a>
-
-                    </li>
+                    <li><a href="registrarSeccion.aspx">Crear Grupos</a> </li>
+                    <li><a href="registrarMaterias.aspx">Registrar materias</a> </li>
 
 
                     <li><a>Ver Listas</a>
@@ -93,6 +91,7 @@
                             <li><a href="listarEstudiantes.aspx">Ver Estudiantes</a></li>
                             <li><a href="listaDocente.aspx">Ver Docentes</a></li>
                             <li><a href="listaUsuarios.aspx">Ver Usuarios Especiales</a></li>
+                            <li><a href="listarMaterias.aspx">Ver lista de materia</a></li>
                         </ul>
                     </li>
 
@@ -114,7 +113,7 @@
 
 
 
-       <%-- <div class="contenedor_buscar">
+        <%-- <div class="contenedor_buscar">
             <label for="txt_filtrar">Buscar</label>
             <input type="text" id="txt_filtrar" onfocus />
             <br />
