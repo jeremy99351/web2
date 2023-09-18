@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../loading.css" />
     <link rel="stylesheet" href="../css/listaAdmi.css" />
     <link rel="stylesheet" href="../css/nav.css" />
-    <title>registro de materias</title>
+
+    <title>Registrar de materias</title>
 </head>
 <body>
     <form id="form1" runat="server">

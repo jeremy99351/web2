@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../loading.css" />
     <link rel="stylesheet" href="../css/listaAdmi.css" />
     <link rel="stylesheet" href="../css/nav.css" />
-    <title></title>
+
+    <title>Registrar Docentes</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -52,7 +53,7 @@
 
                 <div class="input-box">
                     <asp:Label ID="lblcedula" runat="server" Text="Cedula del docente"></asp:Label>
-                    <asp:TextBox ID="txtCedula" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtCedula" runat="server" ></asp:TextBox>
                     <i class='bx bxs-user'></i>
                 </div>
 

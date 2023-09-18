@@ -46,7 +46,7 @@ public partial class front_listarMaterias : System.Web.UI.Page
             conexionBD.Open();
             cmd.ExecuteNonQuery();
             conexionBD.Close();
-            Response.Write("<script languaje='JavaScript'>alert('¡Registro actualizado!')</script>");
+           // Response.Write("<script languaje='JavaScript'>alert('¡Registro actualizado!')</script>");
         }
 
     }

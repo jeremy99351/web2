@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/listaAdmi.css" />
     <link rel="stylesheet" href="../css/nav.css" />
 
-    <title>registro de aucenia</title>
+    <title>Registro de aucenia</title>
 </head>
 <body>
     <form id="form1" runat="server">

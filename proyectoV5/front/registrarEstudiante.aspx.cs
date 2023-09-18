@@ -15,6 +15,7 @@ public partial class front_registrarEstudiante : System.Web.UI.Page
         if (!IsPostBack)
         {
             cargarDDL();
+            txtCedula.Focus();
         }
     }
 
@@ -23,8 +24,8 @@ public partial class front_registrarEstudiante : System.Web.UI.Page
         MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
         conexionBD.Open();
         MySqlCommand cmd = new MySqlCommand("insert into usuario_estudiante values ('"
-          + this.txtCedula.Text + "','" + this.txtNombre.Text + "','" + this.txtAp1.Text + "','" + this.txtAp2.Text
-          + "','" + ddlUsuario.SelectedValue.ToString() + "','" + ddlSeccion.SelectedValue.ToString() + "','" + txtCorreo.Text + "')", conexionBD);
+          + this.txtCedula.Text.ToUpper() + "','" + this.txtNombre.Text.ToUpper() + "','" + this.txtAp1.Text.ToUpper()
+          + "','" + this.txtAp2.Text.ToUpper() + "','" + ddlUsuario.SelectedValue.ToString() + "','" + ddlSeccion.SelectedValue.ToString() + "','" + txtCorreo.Text.ToUpper() + "')", conexionBD);
 
 
 

@@ -16,6 +16,7 @@ public partial class front_registrarDocente : System.Web.UI.Page
         if (!IsPostBack)
         {
             cargarDDL();
+            txtCedula.Focus();
         }
 
     }
@@ -25,14 +26,14 @@ public partial class front_registrarDocente : System.Web.UI.Page
         MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
         conexionBD.Open();
         MySqlCommand cmd = new MySqlCommand("insert into usuario_docente values ('"
-          + this.txtCedula.Text + "','" + this.txtNombre.Text + "','" + this.txtAp1.Text + "','" + this.txtAp2.Text
-          + "','" + ddlUsuario.SelectedValue.ToString() + "','" + ddlMateria.SelectedValue.ToString() + "','" + txtCorreo.Text + "')", conexionBD);
+          + this.txtCedula.Text.ToUpper() + "','" + this.txtNombre.Text.ToUpper() + "','" + this.txtAp1.Text.ToUpper()
+          + "','" + this.txtAp2.Text.ToUpper() + "','" + ddlUsuario.SelectedValue.ToString() + "','" + ddlMateria.SelectedValue.ToString() + "','" + txtCorreo.Text.ToUpper() + "')", conexionBD);
 
 
 
         cmd.ExecuteReader();
 
-        Response.Write("los datos han sido guardados");
+        //Response.Write("los datos han sido guardados");
 
         txtAp1.Text = "";
         txtAp2.Text = "";
@@ -69,7 +70,7 @@ public partial class front_registrarDocente : System.Web.UI.Page
             conexionBD.Open();
             ddlMateria.DataSource = cmd.ExecuteReader();
             ddlMateria.DataTextField = "nombre_materia";
-            ddlMateria.DataTextField = ddlMateria.DataTextField + "nivel_materia";
+            //ddlMateria.DataTextField = ddlMateria.DataTextField + "nivel_materia";
             ddlMateria.DataValueField = "cod_materia";
             ddlMateria.DataBind();
 

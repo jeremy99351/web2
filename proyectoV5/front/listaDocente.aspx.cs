@@ -81,4 +81,18 @@ public partial class front_listaDocente : System.Web.UI.Page
         CargarDatos();
     }
 
+
+    protected void btnBuscar_Click(object sender, EventArgs e)
+    {
+        
+        MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
+        MySqlDataAdapter adp = new MySqlDataAdapter("select * from usuario_docente", conexionBD);
+        DataTable dt = new DataTable();
+        adp.Fill(dt);
+        if (dt.Rows.Count > 0)
+        {
+            gdvDocente.DataSource = dt;
+            gdvDocente.DataBind();
+        }
+    }
 }

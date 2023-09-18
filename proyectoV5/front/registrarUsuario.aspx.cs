@@ -21,6 +21,7 @@ public partial class front_registrarUsuario : System.Web.UI.Page
         if (!IsPostBack)
         {
             cargarDDL();
+            txtCedula.Focus();
         }
 
     }
@@ -32,37 +33,37 @@ public partial class front_registrarUsuario : System.Web.UI.Page
         MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
         conexionBD.Open();
         MySqlCommand cmd = new MySqlCommand("insert into usuario_mantenimiento values ('"
-          + this.txtCedula.Text + "','"+this.txtNombre.Text+"','"+this.txtAp1.Text+"','"+this.txtAp2.Text
-          +"','"+ddlUsuario.SelectedValue.ToString()+"','"+txtCorreo.Text+"')", conexionBD);
+          + this.txtCedula.Text.ToUpper() + "','" + this.txtNombre.Text.ToUpper() + "','" + this.txtAp1.Text.ToUpper()
+          + "','" + this.txtAp2.Text.ToUpper() + "','" + ddlUsuario.SelectedValue.ToString() + "','" + txtCorreo.Text.ToUpper() + "')", conexionBD);
 
         //MySqlCommand cmd2 = new MySqlCommand("insert into usuario(tipo_usuario,cod_usuario) values(' "
         //    + txtTipo_uSUARIO.Text + "','" + txtCodigo_Usuario.Text + "')", conexionBD);
 
-       // MySqlDataReader usuario = cmd2.ExecuteReader();
+        // MySqlDataReader usuario = cmd2.ExecuteReader();
 
         conexionBD.Close();
         conexionBD.Open();
         MySqlDataReader registro = cmd.ExecuteReader();
-       
 
-        
-        
-            Response.Write("los datos han sido guardados");
 
-            txtAp1.Text = "";
-            txtAp2.Text = "";
-            txtCedula.Text = "";
-            txtNombre.Text = "";
-            txtCorreo.Text = "";
-        
-       
+
+
+        Response.Write("los datos han sido guardados");
+
+        txtAp1.Text = "";
+        txtAp2.Text = "";
+        txtCedula.Text = "";
+        txtNombre.Text = "";
+        txtCorreo.Text = "";
+
+
         conexionBD.Close();
     }
 
     public void cargarDDL()
     {
         MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
-        
+
         using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM usuario"))
         {
             cmd.CommandType = CommandType.Text;
@@ -79,7 +80,7 @@ public partial class front_registrarUsuario : System.Web.UI.Page
         }
 
 
-       // ddlUsuario.Items.Insert(0, new ListItem("--Select Customer--", "0"));
+        // ddlUsuario.Items.Insert(0, new ListItem("--Select Customer--", "0"));
 
     }
 

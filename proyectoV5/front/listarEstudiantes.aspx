@@ -59,7 +59,7 @@
 
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../loading.css">
-    <link rel="stylesheet" href="../css/listaAdmi.css" />
+    <link rel="stylesheet" href="../css/listaAdmi.css" >
 
     <title>Lista Gneral de Estudiantes</title>
 
@@ -80,18 +80,18 @@
                         </ul>
                     </li>
 
-                   <li><a href="registrarSeccion.aspx">Crear Grupos</a> </li>
-                <li><a href="registrarMaterias.aspx">Registrar materias</a> </li>
+                    <li><a href="registrarSeccion.aspx">Crear Grupos</a> </li>
+                    <li><a href="registrarMaterias.aspx">Registrar materias</a> </li>
 
 
-                <li><a>Ver Listas</a>
-                    <ul>
-                        <li><a href="listarSeccion.aspx">Ver Grupos</a></li>
-                        <li><a href="listarEstudiantes.aspx">Ver Estudiantes</a></li>
-                        <li><a href="listaDocente.aspx">Ver Docentes</a></li>
-                        <li><a href="listaUsuarios.aspx">Ver Usuarios Especiales</a></li>
-                        <li><a href="listarMaterias.aspx">Ver lista de materia</a></li>
-                    </ul>
+                    <li><a>Ver Listas</a>
+                        <ul>
+                            <li><a href="listarSeccion.aspx">Ver Grupos</a></li>
+                            <li><a href="listarEstudiantes.aspx">Ver Estudiantes</a></li>
+                            <li><a href="listaDocente.aspx">Ver Docentes</a></li>
+                            <li><a href="listaUsuarios.aspx">Ver Usuarios Especiales</a></li>
+                            <li><a href="listarMaterias.aspx">Ver lista de materia</a></li>
+                        </ul>
                     </li>
 
                     <li><a>Configuraciones</a></li>
@@ -102,10 +102,11 @@
 
             <div class="contenedor_buscar">
                 <label for="txt_filtrar">Buscar</label>
-                <input type="text" id="txt_filtrar" onfocus />
+               <input type="text" ID="txt_filtrar" autofocus="autofocus" />
                 <br />
-                <button class="btn_buscar" id="btnBuscar">BUSCAR</button>
 
+                <asp:Button class="btn_buscar" ID="btnBuscar" runat="server" Text="BUSCAR" />
+            
             </div>
             <br />
         </div>
@@ -146,7 +147,7 @@
 
                 </asp:TemplateField>
 
-                <asp:TemplateField HeaderText="Codigo">
+                <%-- <asp:TemplateField HeaderText="Codigo">
                     <ItemTemplate>
                         <asp:Label ID="lblCedula" runat="server" Text='<%# Eval("cod_usuario") %>'></asp:Label>
                     </ItemTemplate>
@@ -155,7 +156,7 @@
                         <asp:TextBox ID="txtCod" runat="server" Text='<%# Eval("cod_usuario") %>'></asp:TextBox>
                     </EditItemTemplate>
 
-                </asp:TemplateField>
+                </asp:TemplateField>--%>
 
                 <asp:TemplateField HeaderText="Seccion">
                     <ItemTemplate>

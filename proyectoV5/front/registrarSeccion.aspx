@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../loading.css" />
     <link rel="stylesheet" href="../css/listaAdmi.css" />
     <link rel="stylesheet" href="../css/nav.css" />
-    <title>regitro de seccion</title>
+
+    <title>Regitro de Grupo</title>
 </head>
 <body>
     <form id="form1" runat="server">

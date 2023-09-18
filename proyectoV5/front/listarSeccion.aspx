@@ -62,7 +62,7 @@
     <link rel="stylesheet" href="../css/listaAdmi.css">
 
 
-    <title>Lista Gneral de Asistencia</title>
+    <title>Lista General de Grupos</title>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -71,7 +71,7 @@
             <div id="header">
                 <ul class="nav">
 
-                    <li><a>Registrar Usuarios</a>
+                    <li><a>Listar Grupos</a>
                         <ul>
                             <li><a href="registrarUsuario.aspx">Usuario Especial</a></li>
                             <li><a href="registrarEstudiante.aspx">Estudiante</a></li>
@@ -102,10 +102,11 @@
 
             <div class="contenedor_buscar">
                 <label for="txt_filtrar">Buscar</label>
-                <input type="text" id="txt_filtrar" onfocus />
+                <input type="text" ID="txt_filtrar" autofocus="autofocus" />
                 <br />
-                <button class="btn_buscar" id="btnBuscar">BUSCAR</button>
 
+                <asp:Button class="btn_buscar" ID="btnBuscar" runat="server" Text="BUSCAR" />
+            
             </div>
             <br />
         </div>

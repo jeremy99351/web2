@@ -6,9 +6,9 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <link rel="stylesheet" href="../loading.css" />
-    <link rel="stylesheet" href="../css/listaAdmi.css" />
-    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../loading.css" >
+    <link rel="stylesheet" href="../css/listaAdmi.css" >
+    <link rel="stylesheet" href="../css/nav.css" >
 
     <title>Registrar usuarios</title>
 </head>

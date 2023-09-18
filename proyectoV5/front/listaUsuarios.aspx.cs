@@ -17,6 +17,8 @@ public partial class front_listaUsuarios : System.Web.UI.Page
         if (!IsPostBack)
         {
             CargarDatos();
+         
+            //txtFiltrar.focus();
         }
 
     }
@@ -35,7 +37,7 @@ public partial class front_listaUsuarios : System.Web.UI.Page
         }
     }
 
-    private void ActualizarActor(string cedula, string nombre, string ap1, string ap2, string codigo, string correo)
+    private void ActualizarActor(string cedula, string nombre, string ap1, string ap2,  string correo)
     {
         using (MySqlConnection conexionBD = new MySqlConnection(cadenaConexion))
         {
@@ -43,7 +45,7 @@ public partial class front_listaUsuarios : System.Web.UI.Page
 
             string query = "update usuario_mantenimiento set " +
                 "nombre ='" + nombre + "',primer_apellido ='" + ap1 + "',segundo_apellido = ' " + ap2
-                + "', cod_usuario='" + codigo + "', correo ='" + correo + "' where cedula_mantenimiento= '" + cedula + "'";
+                +  "', correo ='" + correo + "' where cedula_mantenimiento= '" + cedula + "'";
 
             //"' where cedula_mantenimiento = '" + cedula
 
@@ -51,7 +53,7 @@ public partial class front_listaUsuarios : System.Web.UI.Page
             conexionBD.Open();
             cmd.ExecuteNonQuery();
             conexionBD.Close();
-            Response.Write("<script languaje='JavaScript'>alert('¡Registro actualizado!')</script>");
+            //Response.Write("<script languaje='JavaScript'>alert('¡Registro actualizado!')</script>");
         }
 
     }
@@ -72,7 +74,7 @@ public partial class front_listaUsuarios : System.Web.UI.Page
         TextBox txtCod = (TextBox)gdvUsuarios.Rows[e.RowIndex].FindControl("txtCod");
         TextBox txtCorreo = (TextBox)gdvUsuarios.Rows[e.RowIndex].FindControl("txtCorreo");
 
-        ActualizarActor(codigo, txtNombre.Text, txtAp1.Text, txtAp2.Text, txtCod.Text, txtCorreo.Text);
+        ActualizarActor(codigo, txtNombre.Text, txtAp1.Text, txtAp2.Text, txtCorreo.Text);
         gdvUsuarios.EditIndex = -1;
         CargarDatos();
     }

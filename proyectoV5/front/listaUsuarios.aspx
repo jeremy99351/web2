@@ -60,7 +60,7 @@
 
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../loading.css">
-    <link rel="stylesheet" href="../css/listaAdmi.css" />
+    <link rel="stylesheet" href="../css/listaAdmi.css" >
 
 
     <title>listar usuarios</title>
@@ -104,10 +104,11 @@
 
             <div class="contenedor_buscar">
                 <label for="txt_filtrar">Buscar</label>
-                <input type="text" id="txt_filtrar" onfocus />
+              <input type="text" ID="txt_filtrar" autofocus="autofocus" />
                 <br />
-                <button class="btn_buscar" id="btnBuscar">BUSCAR</button>
 
+                <asp:Button class="btn_buscar" ID="btnBuscar" runat="server" Text="BUSCAR" />
+            
             </div>
             <br />
         </div>
@@ -148,7 +149,7 @@
                     </EditItemTemplate>
 
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="Codigo">
+                <%-- <asp:TemplateField HeaderText="Codigo">
                     <ItemTemplate>
                         <asp:Label ID="lblCedula" runat="server" Text='<%# Eval("cod_usuario") %>'></asp:Label>
                     </ItemTemplate>
@@ -157,7 +158,7 @@
                         <asp:TextBox ID="txtCod" runat="server" Text='<%# Eval("cod_usuario") %>'></asp:TextBox>
                     </EditItemTemplate>
 
-                </asp:TemplateField>
+                </asp:TemplateField>--%>
                 <asp:TemplateField HeaderText="Correo">
                     <ItemTemplate>
                         <asp:Label ID="lblCor" runat="server" Text='<%# Eval("correo") %>'></asp:Label>

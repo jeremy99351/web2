@@ -15,6 +15,7 @@ public partial class front_registrarSeccion : System.Web.UI.Page
         if (!IsPostBack)
         {
             cargarDDL();
+            txtGrupo.Focus();
         }
     }
 
@@ -23,7 +24,7 @@ public partial class front_registrarSeccion : System.Web.UI.Page
         MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
         conexionBD.Open();
         MySqlCommand cmd = new MySqlCommand("insert into seccion values ('"
-          + this.txtGrupo.Text + "','" + ddlDocente.SelectedValue.ToString() + "')", conexionBD);
+          + this.txtGrupo.Text.ToUpper() + "','" + ddlDocente.SelectedValue.ToString() + "')", conexionBD);
 
         cmd.ExecuteReader();
 
