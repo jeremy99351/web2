@@ -8,7 +8,7 @@
 
     <style type="text/css">
         table {
-            margin-top: 25%;
+  
             backdrop-filter: brightness(0.6);
         }
 
@@ -67,11 +67,10 @@
 <body>
     <form id="form1" runat="server">
 
-        <div class="contenedor_filtraciones">
-            <div id="header">
+          <div id="header">
                 <ul class="nav">
 
-                    <li><a>Listar Grupos</a>
+                    <li><a>Registrar Usuarios</a>
                         <ul>
                             <li><a href="registrarUsuario.aspx">Usuario Especial</a></li>
                             <li><a href="registrarEstudiante.aspx">Estudiante</a></li>
@@ -79,7 +78,6 @@
 
                         </ul>
                     </li>
-
                     <li><a href="registrarSeccion.aspx">Crear Grupos</a> </li>
                     <li><a href="registrarMaterias.aspx">Registrar materias</a> </li>
 
@@ -98,14 +96,15 @@
                 </ul>
             </div>
 
-
-
+        <div class="contenedor_filtraciones">
+      
             <div class="contenedor_buscar">
                 <label for="txt_filtrar">Buscar</label>
-                <input type="text" ID="txt_filtrar" autofocus="autofocus" />
+               <%-- <input type="text" ID="txt_filtrar" autofocus="autofocus" />--%>
+                <asp:TextBox ID="txtfiltro" runat="server"></asp:TextBox>
                 <br />
 
-                <asp:Button class="btn_buscar" ID="btnBuscar" runat="server" Text="BUSCAR" />
+                <asp:Button class="btn_buscar" ID="btnBuscar" runat="server" Text="BUSCAR" OnClick="btnBuscar_Click" />
             
             </div>
             <br />
@@ -130,7 +129,7 @@
 
                 </asp:TemplateField>
 
-                <asp:CommandField HeaderText="Operaciones" ShowHeader="True" ShowEditButton="True" />
+                <asp:CommandField HeaderText="Operaciones" ShowHeader="True" ShowEditButton="True" ButtonType="Button" />
             </Columns>
         </asp:GridView>
 

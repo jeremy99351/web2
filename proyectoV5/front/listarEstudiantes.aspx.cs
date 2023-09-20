@@ -79,4 +79,19 @@ public partial class front_listarEstudiantes : System.Web.UI.Page
         gdvUsuarios.EditIndex = -1;
         CargarDatos();
     }
+
+    protected void btnBuscar_Click(object sender, EventArgs e)
+    {
+
+        MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
+        MySqlDataAdapter adp = new MySqlDataAdapter("select * from usuario_estudiante where cedula_estudiante =" +
+            "'" + txtFiltro.Text + "' or nombre = '" + txtFiltro.Text + "' or correo = '" + txtFiltro.Text + "'", conexionBD);
+        DataTable dt = new DataTable();
+        adp.Fill(dt);
+        if (dt.Rows.Count > 0)
+        {
+            gdvUsuarios.DataSource = dt;
+            gdvUsuarios.DataBind();
+        }
+    }
 }

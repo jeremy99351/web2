@@ -15,6 +15,7 @@ public partial class front_listarMaterias : System.Web.UI.Page
         if (!IsPostBack)
         {
             CargarDatos();
+           
         }
     }
 
@@ -74,4 +75,17 @@ public partial class front_listarMaterias : System.Web.UI.Page
         gdvMateria.EditIndex = -1;
         CargarDatos();
     }
+
+    //protected void btnBuscar_Click(object sender, EventArgs e)
+    //{
+    //    MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
+    //    MySqlDataAdapter adp = new MySqlDataAdapter("select * from materia where ", conexionBD);
+    //    DataTable dt = new DataTable();
+    //    adp.Fill(dt);
+    //    if (dt.Rows.Count > 0)
+    //    {
+    //        gdvMateria.DataSource = dt;
+    //        gdvMateria.DataBind();
+    //    }
+    //}
 }

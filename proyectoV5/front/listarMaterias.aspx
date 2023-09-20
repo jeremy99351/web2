@@ -59,7 +59,7 @@
 
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../loading.css">
-    <link rel="stylesheet" href="../css/listaAdmi.css" >
+    <link rel="stylesheet" href="../css/listaAdmi.css">
 
 
 
@@ -68,8 +68,7 @@
 <body>
     <form id="form1" runat="server">
 
-        <div class="contenedor_filtraciones">
-            <div id="header">
+         <div id="header">
                 <ul class="nav">
 
                     <li><a>Registrar Usuarios</a>
@@ -98,18 +97,6 @@
                 </ul>
             </div>
 
-
-
-            <div class="contenedor_buscar">
-                <label for="txt_filtrar">Buscar</label>
-               <input type="text" ID="txt_filtrar" autofocus="autofocus" />
-                <br />
-
-                <asp:Button class="btn_buscar" ID="btnBuscar" runat="server" Text="BUSCAR" />
-            
-            </div>
-            <br />
-        </div>
 
         <asp:GridView ID="gdvMateria" runat="server" AutoGenerateColumns="False" OnRowEditing="ModificarFila" OnRowUpdating="ActualizarFila" OnRowCancelingEdit="CancelarEdicion" DataKeyNames="cod_materia">
             <Columns>
@@ -145,7 +132,7 @@
 
                 </asp:TemplateField>
 
-                <asp:CommandField HeaderText="Operaciones" ShowHeader="True" ShowEditButton="True" />
+                <asp:CommandField HeaderText="Operaciones" ShowHeader="True" ShowEditButton="True" ButtonType="Button"/>
             </Columns>
         </asp:GridView>
 

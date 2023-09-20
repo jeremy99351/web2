@@ -9,7 +9,7 @@
 
     <style type="text/css">
         table {
-            margin-top: 25%;
+           
             backdrop-filter: brightness(0.6);
         }
 
@@ -60,7 +60,7 @@
 
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../loading.css">
-    <link rel="stylesheet" href="../css/listaAdmi.css" >
+    <link rel="stylesheet" href="../css/listaAdmi.css">
 
 
     <title>Lista  Gneral de Docentes</title>
@@ -69,41 +69,44 @@
 
     <form id="form1" runat="server">
 
+        <div id="header">
+            <ul class="nav">
+
+                <li><a>Registrar Usuarios</a>
+                    <ul>
+                        <li><a href="registrarUsuario.aspx">Usuario Especial</a></li>
+                        <li><a href="registrarEstudiante.aspx">Estudiante</a></li>
+                        <li><a href="registrarDocente.aspx">Docente</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="registrarSeccion.aspx">Crear Grupos</a> </li>
+                <li><a href="registrarMaterias.aspx">Registrar materias</a> </li>
+
+
+                <li><a>Ver Listas</a>
+                    <ul>
+                        <li><a href="listarSeccion.aspx">Ver Grupos</a></li>
+                        <li><a href="listarEstudiantes.aspx">Ver Estudiantes</a></li>
+                        <li><a href="listaDocente.aspx">Ver Docentes</a></li>
+                        <li><a href="listaUsuarios.aspx">Ver Usuarios Especiales</a></li>
+                        <li><a href="listarMaterias.aspx">Ver lista de materia</a></li>
+                    </ul>
+                </li>
+
+                <li><a>Configuraciones</a></li>
+            </ul>
+        </div>
+
         <div class="contenedor_filtraciones">
-            <div id="header">
-                <ul class="nav">
-
-                    <li><a>Registrar Usuarios</a>
-                        <ul>
-                            <li><a href="registrarUsuario.aspx">Usuario Especial</a></li>
-                            <li><a href="registrarEstudiante.aspx">Estudiante</a></li>
-                            <li><a href="registrarDocente.aspx">Docente</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a href="registrarSeccion.aspx">Crear Grupos</a> </li>
-                    <li><a href="registrarMaterias.aspx">Registrar materias</a> </li>
-
-
-                    <li><a>Ver Listas</a>
-                        <ul>
-                            <li><a href="listarSeccion.aspx">Ver Grupos</a></li>
-                            <li><a href="listarEstudiantes.aspx">Ver Estudiantes</a></li>
-                            <li><a href="listaDocente.aspx">Ver Docentes</a></li>
-                            <li><a href="listaUsuarios.aspx">Ver Usuarios Especiales</a></li>
-                            <li><a href="listarMaterias.aspx">Ver lista de materia</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a>Configuraciones</a></li>
-                </ul>
-            </div>
 
 
 
             <div class="contenedor_buscar">
                 <label for="txt_filtrar">Buscar</label>
-                <input type="text" ID="txt_filtrar" autofocus="autofocus" />
+                <%-- <input type="text" ID="txt_filtrar" autofocus="autofocus" />--%>
+                <asp:TextBox ID="txtFiltro" runat="server"></asp:TextBox>
+
                 <br />
 
                 <asp:Button class="btn_buscar" ID="btnBuscar" runat="server" Text="BUSCAR" OnClick="btnBuscar_Click" />
@@ -173,7 +176,7 @@
 
                 </asp:TemplateField>--%>
 
-                <asp:TemplateField HeaderText="Codigo Materia">
+               <%-- <asp:TemplateField HeaderText="Codigo Materia">
                     <ItemTemplate>
                         <asp:Label ID="lblCodigoM" runat="server" Text='<%# Eval("cod_materia") %>'></asp:Label>
                     </ItemTemplate>
@@ -182,7 +185,7 @@
                         <asp:TextBox ID="txtCodM" runat="server" Text='<%# Eval("cod_materia") %>'></asp:TextBox>
                     </EditItemTemplate>
 
-                </asp:TemplateField>
+                </asp:TemplateField>--%>
 
                 <asp:TemplateField HeaderText="Correo">
                     <ItemTemplate>
@@ -195,7 +198,7 @@
 
                 </asp:TemplateField>
 
-                <asp:CommandField HeaderText="Operaciones" ShowHeader="True" ShowEditButton="True" />
+                <asp:CommandField HeaderText="Operaciones" ShowHeader="True" ShowEditButton="True" ButtonType="Button" />
             </Columns>
         </asp:GridView>
 

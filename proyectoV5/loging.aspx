@@ -17,26 +17,16 @@
 
             <h1>Iniciar seccion</h1>
             <div class="input-box">
-                <asp:TextBox ID="txtUser" runat="server" placeholder="cedula" required></asp:TextBox>
+                <asp:TextBox ID="txtUser" runat="server" placeholder="cedula" ></asp:TextBox>
                 <i class='bx bxs-user'></i>
             </div>
             <div class="input-box">
 
-                <asp:TextBox ID="txtPassword" required type="password" placeholder="codigo" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtPassword"  type="password" placeholder="codigo" runat="server"></asp:TextBox>
                 <i class='bx bxs-lock-alt'></i>
             </div>
-            <div class="remember-forgot">
-                <label>
-                    <input type="checkbox">
-                    recuerdame</label>
-                <a href="#">olvidar contraseña ?</a>
-            </div>
+            
             <asp:Button ID="btn" class="btn" runat="server" Text="Ingresar" OnClick="btn_Click" />
-
-            <div class="register-link">
-                <p>noo tiene cuenta <a href="#">REGISTRAR</a></p>
-            </div>
-
 
         </div>
 

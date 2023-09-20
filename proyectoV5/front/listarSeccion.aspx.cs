@@ -74,4 +74,19 @@ public partial class front_listarSeccion : System.Web.UI.Page
         gdvSeccion.EditIndex = -1;
         CargarDatos();
     }
+
+    protected void btnBuscar_Click(object sender, EventArgs e)
+    {
+
+        MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
+        MySqlDataAdapter adp = new MySqlDataAdapter("select * from seccion where cod_seccion = '"+txtfiltro.Text+"'", conexionBD);
+        DataTable dt = new DataTable();
+        adp.Fill(dt);
+        if (dt.Rows.Count > 0)
+        {
+            gdvSeccion.DataSource = dt;
+            gdvSeccion.DataBind();
+        }
+
+    }
 }

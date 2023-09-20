@@ -18,7 +18,7 @@ public partial class front_listaUsuarios : System.Web.UI.Page
         {
             CargarDatos();
          
-            //txtFiltrar.focus();
+            txtFiltro.Focus();
         }
 
     }
@@ -85,4 +85,19 @@ public partial class front_listaUsuarios : System.Web.UI.Page
         CargarDatos();
     }
 
+
+    protected void btnBuscar_Click(object sender, EventArgs e)
+    {
+        MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
+        MySqlDataAdapter adp = new MySqlDataAdapter("select cedula_mantenimiento,primer_apellido," +
+            "segundo_apellido,cod_usuario,nombre,correo from usuario_mantenimiento where cedula_mantenimiento =" +
+            "'"+ txtFiltro.Text+"' or nombre = '"+txtFiltro.Text+"' or correo = '"+txtFiltro.Text+"'", conexionBD);
+        DataTable dt = new DataTable();
+        adp.Fill(dt);
+        if (dt.Rows.Count > 0)
+        {
+            gdvUsuarios.DataSource = dt;
+            gdvUsuarios.DataBind();
+        }
+    }
 }

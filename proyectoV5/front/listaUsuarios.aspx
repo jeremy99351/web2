@@ -9,7 +9,7 @@
 
     <style type="text/css">
         table {
-            margin-top: 25%;
+
             backdrop-filter: brightness(0.6);
         }
 
@@ -60,7 +60,7 @@
 
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../loading.css">
-    <link rel="stylesheet" href="../css/listaAdmi.css" >
+    <link rel="stylesheet" href="../css/listaAdmi.css">
 
 
     <title>listar usuarios</title>
@@ -69,8 +69,7 @@
 
     <form id="form1" runat="server">
 
-        <div class="contenedor_filtraciones">
-            <div id="header">
+          <div id="header">
                 <ul class="nav">
 
                     <li><a>Registrar Usuarios</a>
@@ -99,16 +98,18 @@
                     <li><a>Configuraciones</a></li>
                 </ul>
             </div>
-
-
+        <div class="contenedor_filtraciones">
+          
 
             <div class="contenedor_buscar">
                 <label for="txt_filtrar">Buscar</label>
-              <input type="text" ID="txt_filtrar" autofocus="autofocus" />
+                <%-- <input type="text" ID="txt_filtrar" autofocus="autofocus" />--%>
+                <asp:TextBox ID="txtFiltro" runat="server"></asp:TextBox>
+
                 <br />
 
-                <asp:Button class="btn_buscar" ID="btnBuscar" runat="server" Text="BUSCAR" />
-            
+                <asp:Button class="btn_buscar" ID="btnBuscar" runat="server" Text="BUSCAR" OnClick="btnBuscar_Click" />
+
             </div>
             <br />
         </div>
