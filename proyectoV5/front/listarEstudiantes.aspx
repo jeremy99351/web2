@@ -111,7 +111,7 @@
             <br />
         </div>
 
-        <asp:GridView ID="gdvUsuarios" runat="server" AutoGenerateColumns="False" OnRowEditing="ModificarFila" OnRowUpdating="ActualizarFila" OnRowCancelingEdit="CancelarEdicion" DataKeyNames="cedula_estudiante">
+        <asp:GridView ID="gdvUsuarios" runat="server" AutoGenerateColumns="False" OnRowEditing="ModificarFila" OnRowUpdating="ActualizarFila" OnRowCancelingEdit="CancelarEdicion" DataKeyNames="cedula_estudiante" DataSourceID="SqlDataSource1">
             <Columns>
                 <asp:TemplateField HeaderText="Identificacion">
                     <ItemTemplate>
@@ -183,6 +183,8 @@
                 <asp:CommandField HeaderText="Operaciones" ShowHeader="True" ShowEditButton="True" ButtonType="Button" />
             </Columns>
         </asp:GridView>
+
+          <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
 
     </form>
 </body>
