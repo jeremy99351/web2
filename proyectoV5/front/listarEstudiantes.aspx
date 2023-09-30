@@ -57,9 +57,9 @@
             }
     </style>
 
-    <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../loading.css">
-    <link rel="stylesheet" href="../css/listaAdmi.css">
+    <link rel="stylesheet" href="../css/nav.css"/>
+    <link rel="stylesheet" href="../loading.css"/>
+    <link rel="stylesheet" href="../css/listaAdmi.css"/>
 
     <title>Lista Gneral de Estudiantes</title>
 
