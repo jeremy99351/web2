@@ -29,6 +29,12 @@ cant_au int, cedula_estudiante varchar(50)not null,cod_materia varchar(10) not n
 constraint fk_estudiante foreign key (cedula_estudiante) references usuario_estudiante(cedula_estudiante),
 constraint fk_materia foreign key (cod_materia) references materia(cod_materia) );
 
+
+create table horaio(hora varchar(50),dia varchar(50), cedula_docente varchar(50) not null,grupo varchar(20),
+constraint fk_docente foreign key (cedula_docente) references usuario_docente(cedula_docente),
+constraint fk_grupo foreign key (grupo) references seccion (cod_seccion) );
+
+
 insert into usuario values('MANTENIMIENTO', 'm4nt3');
 insert into usuario values('ADMINISTRATIVO', '4dm1n');
 insert into usuario values('DOCENTE', 'd0c3n');

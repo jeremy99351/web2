@@ -12,7 +12,8 @@
     /* Se mantiene en la parte superior */
     left: 0;
     /* Se mantiene a la izquiera */
-    background: transparent;
+    background: transparent ;
+   
     /*  Fondo del navbar 
     */
     /* Deshabilitar el scroll lateral */
@@ -45,8 +46,9 @@
         border-radius: 5%;
     }
 
-#navbar_lateral_inicio:hover {
+.navbar_lateral_inicio:hover {
     border-bottom: 3px solid lightgreen;
+    backdrop-filter:brightness(0.4);
 }
 
 /*Estilos de los contenedor del index del navbar lateral */

@@ -27,8 +27,8 @@ public partial class front_listarEstudiantes : System.Web.UI.Page
         adp.Fill(dt);
         if (dt.Rows.Count > 0)
         {
-            gdvUsuarios.DataSource = dt;
-            gdvUsuarios.DataBind();
+            gdvEstudiante.DataSource = dt;
+            gdvEstudiante.DataBind();
         }
     }
 
@@ -55,28 +55,28 @@ public partial class front_listarEstudiantes : System.Web.UI.Page
 
     protected void ModificarFila(object sender, GridViewEditEventArgs e)
     {
-        gdvUsuarios.EditIndex = e.NewEditIndex;
+        gdvEstudiante.EditIndex = e.NewEditIndex;
         CargarDatos();
     }
 
     protected void ActualizarFila(object sender, GridViewUpdateEventArgs e)
     {
-        string codigo = gdvUsuarios.DataKeys[e.RowIndex].Value.ToString();
+        string codigo = gdvEstudiante.DataKeys[e.RowIndex].Value.ToString();
 
-        TextBox txtNombre = (TextBox)gdvUsuarios.Rows[e.RowIndex].FindControl("txtNombre");
-        TextBox txtAp1 = (TextBox)gdvUsuarios.Rows[e.RowIndex].FindControl("txtAp1");
-        TextBox txtAp2 = (TextBox)gdvUsuarios.Rows[e.RowIndex].FindControl("txtAp2");
-        TextBox txtCod = (TextBox)gdvUsuarios.Rows[e.RowIndex].FindControl("txtCod");
-        TextBox txtCorreo = (TextBox)gdvUsuarios.Rows[e.RowIndex].FindControl("txtCorreo");
+        TextBox txtNombre = (TextBox)gdvEstudiante.Rows[e.RowIndex].FindControl("txtNombre");
+        TextBox txtAp1 = (TextBox)gdvEstudiante.Rows[e.RowIndex].FindControl("txtAp1");
+        TextBox txtAp2 = (TextBox)gdvEstudiante.Rows[e.RowIndex].FindControl("txtAp2");
+        TextBox txtCod = (TextBox)gdvEstudiante.Rows[e.RowIndex].FindControl("txtCod");
+        TextBox txtCorreo = (TextBox)gdvEstudiante.Rows[e.RowIndex].FindControl("txtCorreo");
 
         ActualizarActor(codigo, txtNombre.Text, txtAp1.Text, txtAp2.Text, txtCod.Text, txtCorreo.Text);
-        gdvUsuarios.EditIndex = -1;
+        gdvEstudiante.EditIndex = -1;
         CargarDatos();
     }
 
     protected void CancelarEdicion(object sender, GridViewCancelEditEventArgs e)
     {
-        gdvUsuarios.EditIndex = -1;
+        gdvEstudiante.EditIndex = -1;
         CargarDatos();
     }
 
@@ -90,8 +90,8 @@ public partial class front_listarEstudiantes : System.Web.UI.Page
         adp.Fill(dt);
         if (dt.Rows.Count > 0)
         {
-            gdvUsuarios.DataSource = dt;
-            gdvUsuarios.DataBind();
+            gdvEstudiante.DataSource = dt;
+            gdvEstudiante.DataBind();
         }
     }
 }

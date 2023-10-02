@@ -39,10 +39,7 @@ public partial class _Default : System.Web.UI.Page
             Response.Redirect("front/listaUsuarios.aspx?texto="+valor);
             //Response.Redirect("front/listaUsuarios.aspx?texto="+valor);
         }
-        else
-        {
-            lblMensaje.Text = "¡No existe un usuario registrado !";
-        }
+       
         conexionBD.Close();
     }
 

@@ -111,7 +111,9 @@
             <br />
         </div>
 
-        <asp:GridView ID="gdvUsuarios" runat="server" AutoGenerateColumns="False" OnRowEditing="ModificarFila" OnRowUpdating="ActualizarFila" OnRowCancelingEdit="CancelarEdicion" DataKeyNames="cedula_estudiante" DataSourceID="SqlDataSource1">
+        <asp:GridView ID="gdvEstudiante" runat="server" AutoGenerateColumns="False"
+            OnRowEditing="ModificarFila" OnRowUpdating="ActualizarFila" OnRowCancelingEdit="CancelarEdicion"
+            DataKeyNames="cedula_estudiante" >
             <Columns>
                 <asp:TemplateField HeaderText="Identificacion">
                     <ItemTemplate>

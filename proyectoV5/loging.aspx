@@ -30,9 +30,7 @@
 
         </div>
 
-        <div>
-            <asp:Label ID="lblMensaje" runat="server" Text=""></asp:Label>
-        </div>
+       
     </form>
 </body>
 </html>
