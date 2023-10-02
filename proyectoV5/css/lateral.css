@@ -2,21 +2,19 @@
 /*Estilos de los contenedor del index del navbar lateral 
 * Estilos del navbar lateral */
 .navbar_lateral {
-   height:100%;
+    height: 100%;
     /* margin-top: none; */
-   
     /* Que ocupe todo el ancho de la pantalla */
-  
     /*Definir el ancho del navbar */
     position: absolute;
-   /* Fija el navbar, que no se mueva con el scroll */
+    /* Fija el navbar, que no se mueva con el scroll */
     z-index: 1;
     /* Se mantiene en la parte superior */
     left: 0;
     /* Se mantiene a la izquiera */
     background: transparent;
-    /*  Fondo del navbar */
-    overflow-x: hidden;
+    /*  Fondo del navbar 
+    */
     /* Deshabilitar el scroll lateral */
     padding-top: 20px;
     /* border-right: 1px solid #000; */
