@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="MenuConfiguracion.aspx.cs" Inherits="front_MenuConfiguracion" %>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
