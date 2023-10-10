@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="css/MaquetacionEstilo2.css">
+   <link rel="stylesheet" type="text/css" href="MaquetacionEstilo2.css">
   <link rel="shortcut icon" types="img/x-icon" href="WEB/img/atomic.ico">
   <link rel="stylesheet" href="css/listaAdmi.css">
 
