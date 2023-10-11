@@ -119,14 +119,7 @@
 <footer>
     <div class="navLeftFooter nav-sprite-v1" id="navFooter">
 
-      <!--  <a href="#" id="navBackToTop" aria-label="Inicio de Página"
-            onclick="document.body.scrollTop = 0; document.documentElement.scrollTop = 0; event.preventDefault();">
-            <div class="navFooterBackToTop">
-                <span class="navFooterBackToTopText">
-                    Inicio de Página
-                </span>
-            </div>
-        </a>-->
+      
         
                 <div class="navFooterColSpacerInner navAccessibility"></div>
                 

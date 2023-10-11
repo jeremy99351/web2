@@ -83,41 +83,6 @@ li {
 
 
 
-.menu-horizontal >li>a{
-    display: block;
-    padding: 15px 20px;
-    text-decoration: none;
-
-}
-
-
-
- .menu-vertical{
-    position: absolute;
-    display:none;
-    list-style: none;
-    width: 200px;
-    background-color: #111;
-
-}
-
-.menu-horinzontal .menu-vertical{
-display: block;
-}
-.menu-vertical li:hover{
-    background-color: green;
-}
-
-.menu-vertical li:hover {
-
-    background: #3ead47;
-  }
-.menu-vertical li a{
-    display: block;
-    padding: 15px 15px 15px 20px;
-}
-
-*/
 
 
 
