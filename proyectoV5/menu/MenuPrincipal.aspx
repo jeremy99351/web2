@@ -4,16 +4,16 @@
    
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="proyecto3.css">
-    <title>Menu</title>
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" type="text/css" href="MenuPrincipal.css" />
+<title>Menú</title>
 
     <div id="header">
         <h1 id="Titulo">WEB DESING </h1>
    
 </div>
-
+ 
 </head>
 <header>
     <nav>
