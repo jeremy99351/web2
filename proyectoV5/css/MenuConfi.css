@@ -15,7 +15,7 @@
     background: grey;
     margin: 0.5em;
     border-radius: 1em;
-    ;
+    
 }
 
 #Titulo {
@@ -98,7 +98,7 @@ div #Aside {
 
 .Articulo {
     text-align: center;
-    /* width: 91%;*/
+  
     height: 21.5%;
     background: #e9e8e2;
     margin: 0.5em;
@@ -108,7 +108,7 @@ div #Aside {
 }
 
 svg {
-    size: 20px;
+    inline-size: 20px;
 }
 
 h3 {
