@@ -41,8 +41,9 @@ public partial class front_listaUsuarios : System.Web.UI.Page
     {
         using (MySqlConnection conexionBD = new MySqlConnection(cadenaConexion))
         {
-            //     string datos = Request.QueryString["texto"].ToString();
+                 string datos = Request.QueryString["texto"].ToString();
 
+            
             string query = "update usuario_mantenimiento set " +
                 "nombre ='" + nombre + "',primer_apellido ='" + ap1 + "',segundo_apellido = ' " + ap2
                 +  "', correo ='" + correo + "' where cedula_mantenimiento= '" + cedula + "'";

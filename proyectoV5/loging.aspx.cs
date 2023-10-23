@@ -27,17 +27,31 @@ public partial class _Default : System.Web.UI.Page
         conexionBD.Open();
         MySqlCommand cmd = new MySqlCommand("select * from usuario_mantenimiento where cedula_mantenimiento ='"
           + this.txtUser.Text + "'" + "and correo ='" + this.txtPassword.Text + "'", conexionBD);
+
+        MySqlCommand cmd1 = new MySqlCommand("select * from usuario_docente where cedula_docente ='"
+          + this.txtUser.Text + "'" + "and correo ='" + this.txtPassword.Text + "'", conexionBD);
+        MySqlCommand cmd2 = new MySqlCommand("select * from usuario_estudiante where cedula_estudiante ='"
+          + this.txtUser.Text + "'" + "and correo ='" + this.txtPassword.Text + "'", conexionBD);
         MySqlDataReader registro = cmd.ExecuteReader();
 
 
 
         if (registro.Read())
         {
-            
-
+           
             string valor = txtUser.Text.Trim();
-            Response.Redirect("front/listaUsuarios.aspx?texto="+valor);
+            Response.Redirect("front/docentes/registrarHorario.aspx?texto=" + valor);
+
             //Response.Redirect("front/listaUsuarios.aspx?texto="+valor);
+        }
+        else
+        {
+            conexionBD.Close();
+            conexionBD.Open();
+            cmd1.ExecuteReader();
+            string valor = txtUser.Text.Trim();
+            Response.Redirect("front/docentes/registrarHorario.aspx?texto=" + valor);
+
         }
        
         conexionBD.Close();

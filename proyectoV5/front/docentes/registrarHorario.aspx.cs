@@ -10,7 +10,7 @@ using System.Web.UI.WebControls;
 public partial class front_docentes_registrarHorario : System.Web.UI.Page
 {
     string cadenaConexion = System.Configuration.ConfigurationManager.ConnectionStrings["conexionCALUFA"].ConnectionString;
-
+    
     protected void Page_Load(object sender, EventArgs e)
     {
         cargarddl();
@@ -199,7 +199,7 @@ public partial class front_docentes_registrarHorario : System.Web.UI.Page
             DropDownList22.DataSource = cmd.ExecuteReader();
             DropDownList22.DataTextField = "cod_seccion";
             DropDownList22.DataValueField = "cod_seccion";
-            DropDownList22.DataBind();  
+            DropDownList22.DataBind();
             conexionBD.Close();
 
             conexionBD.Open();
@@ -518,7 +518,24 @@ public partial class front_docentes_registrarHorario : System.Web.UI.Page
 
 
 
-        } 
+        }
     }
 
+
+    protected void btn_Click(object sender, EventArgs e)
+    {
+     string datos = Request.QueryString["texto"].ToString();
+
+        MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
+        conexionBD.Open();
+        MySqlCommand cmd = new MySqlCommand("insert into horaio values ('"
+         +lbl1.Text+"','"+"LUNES" +"','"+datos +"','"+ DropDownList2.SelectedValue.ToString() + "')", conexionBD);
+
+        cmd.ExecuteReader();
+
+        //Response.Write("los datos han sido guardados");
+        
+
+        conexionBD.Close();
+    }
 }

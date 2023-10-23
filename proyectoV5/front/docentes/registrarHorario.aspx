@@ -133,7 +133,9 @@
                                         <th>Vierens</th>
                                     </tr>
                                     <tr>
-                                        <td>7:00-7:40</td>
+                                        
+                                        <td><asp:Label ID="lbl1" runat="server" Text="Label">7:00-7:40</asp:Label></td>
+
                                         <td>
                                             <asp:DropDownList class="op" ID="DropDownList1" runat="server"></asp:DropDownList>
                                         </td>
@@ -149,7 +151,7 @@
                                             <asp:DropDownList class="op" ID="DropDownList5" runat="server"></asp:DropDownList></td>
                                     </tr>
                                     <tr>
-                                        <td>7:40 - 8:20</td>
+                                        <td><asp:Label ID="Label2" runat="server" Text="Label">7:40-8:20</asp:Label></td>
                                         <td>
                                             <asp:DropDownList class="op" ID="DropDownList6" runat="server"></asp:DropDownList></td>
                                         <td>
@@ -167,7 +169,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>8:25 - 9:05</td>
+                                        <td><asp:Label ID="Label3" runat="server" Text="Label">8:25-9:05</asp:Label></td>
                                         <td>
                                             <asp:DropDownList class="op" ID="DropDownList11" runat="server"></asp:DropDownList></td>
                                         <td>
@@ -180,7 +182,7 @@
                                             <asp:DropDownList class="op" ID="DropDownList15" runat="server"></asp:DropDownList></td>
                                     </tr>
                                     <tr>
-                                        <td>9:05 - 9:45</td>
+                                        <td><asp:Label ID="Label4" runat="server" Text="Label">9:05-9:45</asp:Label></td>
                                         <td>
                                             <asp:DropDownList class="op" ID="DropDownList16" runat="server"></asp:DropDownList></td>
                                         <td>
@@ -196,7 +198,7 @@
                                         <td colspan="6">9:45 - 9:55 RECREO</td>
                                     </tr>
                                     <tr>
-                                        <td>9:55 - 10:35</td>
+                                        <td><asp:Label ID="Label5" runat="server" Text="Label">9:55-10:35</asp:Label></td>
                                         <td>
                                             <asp:DropDownList class="op" ID="DropDownList21" runat="server"></asp:DropDownList></td>
                                         <td>
@@ -209,7 +211,7 @@
                                             <asp:DropDownList class="op" ID="DropDownList25" runat="server"></asp:DropDownList></td>
                                     </tr>
                                     <tr>
-                                        <td>10:35 - 11:20</td>
+                                        <td><asp:Label ID="Label6" runat="server" Text="Label">10:35-11:20</asp:Label></td>
                                         <td>
                                             <asp:DropDownList class="op" ID="DropDownList26" runat="server"></asp:DropDownList></td>
                                         <td>
@@ -225,7 +227,7 @@
                                         <td colspan="6">11:20 - 12-00 ALMUERZO </td>
                                     </tr>
                                     <tr>
-                                        <td>12:00 12:40</td>
+                                        <td><asp:Label ID="Label7" runat="server" Text="Label">12:00-12:40</asp:Label></td>
                                         <td>
                                             <asp:DropDownList class="op" ID="DropDownList31" runat="server"></asp:DropDownList></td>
                                         <td>
@@ -238,7 +240,7 @@
                                             <asp:DropDownList class="op" ID="DropDownList35" runat="server"></asp:DropDownList></td>
                                     </tr>
                                     <tr>
-                                        <td>12:40 - 1:20</td>
+                                        <td><asp:Label ID="Label8" runat="server" Text="Label">12:40-1:20</asp:Label></td>
                                         <td>
                                             <asp:DropDownList class="op" ID="DropDownList36" runat="server"></asp:DropDownList></td>
                                         <td>
@@ -254,7 +256,7 @@
                                         <td colspan="6">1:20 - 1:25 RECREO</td>
                                     </tr>
                                     <tr>
-                                        <td>1:25 - 2:05</td>
+                                        <td><asp:Label ID="Label9" runat="server" Text="Label">1:25-2:05</asp:Label></td>
                                         <td>
                                             <asp:DropDownList class="op" ID="DropDownList41" runat="server"></asp:DropDownList></td>
                                         <td>
@@ -267,7 +269,7 @@
                                             <asp:DropDownList class="op" ID="DropDownList45" runat="server"></asp:DropDownList></td>
                                     </tr>
                                     <tr>
-                                        <td>2:05 - 2:45</td>
+                                        <td><asp:Label ID="Label10" runat="server" Text="Label">2:05-2:45</asp:Label></td>
                                         <td>
                                             <asp:DropDownList class="op" ID="DropDownList46" runat="server"></asp:DropDownList></td>
                                         <td>
@@ -283,7 +285,7 @@
                                         <td colspan="6">2:45 - 2:55 RECREO</td>
                                     </tr>
                                     <tr>
-                                        <td>2:55 - 3:35</td>
+                                        <td><asp:Label ID="Label11" runat="server" Text="Label">2:55-3:35</asp:Label></td>
                                         <td>
                                             <asp:DropDownList class="op" ID="DropDownList51" runat="server"></asp:DropDownList></td>
                                         <td>
@@ -296,7 +298,7 @@
                                             <asp:DropDownList class="op" ID="DropDownList55" runat="server"></asp:DropDownList></td>
                                     </tr>
                                     <tr>
-                                        <td>3:35 - 4:05</td>
+                                        <td><asp:Label ID="Label12" runat="server" Text="Label">3:35-4:05</asp:Label></td>
                                         <td>
                                             <asp:DropDownList class="op" ID="DropDownList56" runat="server"></asp:DropDownList></td>
                                         <td>
@@ -312,7 +314,7 @@
                                         <td colspan="6">4:05 - 4:15 RECREO</td>
                                     </tr>
                                     <tr>
-                                        <td>4:15 - 4:55</td>
+                                        <td><asp:Label ID="Label13" runat="server" Text="Label">4:15-4:55</asp:Label></td>
                                         <td>
                                             <asp:DropDownList class="op" ID="DropDownList61" runat="server"></asp:DropDownList></td>
                                         <td>
@@ -329,7 +331,7 @@
                                         <td colspan="6">
                                             <div class="wrapper">
 
-                                                <asp:Button ID="btn" class="btn" runat="server" Text="Button" />
+                                                <asp:Button ID="btn" class="btn" runat="server" Text="Button" OnClick="btn_Click" />
 
                                             </div>
                                         </td>
