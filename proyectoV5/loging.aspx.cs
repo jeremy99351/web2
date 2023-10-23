@@ -30,6 +30,7 @@ public partial class _Default : System.Web.UI.Page
 
         MySqlCommand cmd1 = new MySqlCommand("select * from usuario_docente where cedula_docente ='"
           + this.txtUser.Text + "'" + "and correo ='" + this.txtPassword.Text + "'", conexionBD);
+
         MySqlCommand cmd2 = new MySqlCommand("select * from usuario_estudiante where cedula_estudiante ='"
           + this.txtUser.Text + "'" + "and correo ='" + this.txtPassword.Text + "'", conexionBD);
         MySqlDataReader registro = cmd.ExecuteReader();
