@@ -74,7 +74,7 @@ li {
 
     li svg {
         height: 30px;
-        size: 30px;
+        inline-size: 30px;
         align-items: center;
     }
 
@@ -125,12 +125,11 @@ li {
 
 
 body {
-    /* background-image: url("https://pbs.twimg.com/media/FukRzWAXwAEo8iH?format=jpg&name=large");*/
-    background-image: url(img.jpg);
+    
+    background-image:url(img.jpg);
     background-size: 1920px 1000px;
     background-repeat: no-repeat;
-    /*"https://img2.wallspic.com/previews/4/4/8/6/4/146844/146844-morado-paisaje_urbano-azul-la_ciencia_ficcion-urbe-x750.jpg "*/
-}
+    
 
 
 
@@ -148,7 +147,7 @@ body {
 
 p {
     color: #FFF;
-    margin: bottom 10px;
+    margin-bottom: 10px;
 }
 
 
