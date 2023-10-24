@@ -1,0 +1,171 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#contenedor {
+    height: 930px;
+    background: #f5edc3;
+    margin: 0.2em auto;
+    padding: 0.2em;
+}
+
+#header {
+    height: 20%;
+    background: grey;
+    margin: 0.5em;
+    border-radius: 1em;
+    
+}
+
+#Titulo {
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    padding: 70px;
+    font-size: 50px;
+}
+
+#Nav {
+    height: 7%;
+    width: 70.9%;
+    background: black;
+}
+
+#Nav {
+    margin-left: 0;
+}
+
+.menu {
+    float: left;
+    margin-right: 1em;
+    font-family: fantasy;
+}
+
+    .menu li {
+        display: inline-block;
+        margin-top: 16px;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+    }
+
+        .menu a:hover {
+            background: green;
+            border-bottom-style: solid;
+            border: 1em;
+            border-bottom-color: black;
+        }
+
+#contenido {
+    height: 60%;
+    margin: 0.01em;
+}
+
+#section {
+    background-image: url("https://cl.godaddy.com/blog/wp-content/uploads/Opciones-de-dise%C3%B1os-para-paginas-web-1.jpg");
+    height: 200%;
+    width: 68%;
+    border: 1px;
+    background-size: 900px 1000px;
+    background-repeat: no-repeat;
+    border-style: solid;
+    text-align: justify;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+img {
+    float: right;
+    width: 40%;
+    margin: 10px;
+    box-shadow: 0 0 10px;
+}
+
+#Aside {
+    height: 95%;
+    width: 29%;
+    background: #918d8d;
+    float: right;
+}
+
+div #Aside {
+    padding-bottom: 3px;
+}
+
+.Articulo {
+    text-align: center;
+  
+    height: 21.5%;
+    background: #e9e8e2;
+    margin: 0.5em;
+    align-items: center;
+    padding: 20px 5px 620px;
+    text-shadow: 0 0 10px rgba(200, 80, 80, 80);
+}
+
+svg {
+    inline-size: 20px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.articulo > img {
+    width: 30%;
+}
+
+.opciones {
+    margin-top: 20px;
+    margin-left: 5px;
+    float: right
+}
+
+    .opciones li {
+        box-shadow: 6px 3px 8px grey;
+        background: white;
+        padding: 20px 10px;
+        border-radius: 0.5em;
+        border: gray;
+        border-style: solid;
+        display: inline-block;
+        width: 20%;
+        height: auto;
+    }
+
+    .opciones a {
+        color: rgb(43, 139, 235);
+        text-decoration: none;
+        padding: 30px 3px;
+    }
+
+#footer {
+    height: 7%;
+    background: black;
+    margin: 20em -0.1em 0em;
+    padding: 10px;
+    color: white;
+    font-family: inherit;
+}
+
+.correo {
+    padding-left: 30px;
+}
+
+.RS {
+    float: right;
+    margin-top: -60px;
+    padding-right: 20px;
+}
+
+    .RS li {
+        display: inline-block;
+    }
+
+    .RS img {
+        box-shadow: none;
+    }
