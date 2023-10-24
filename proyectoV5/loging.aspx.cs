@@ -1,14 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Runtime.Remoting.Contexts;
-using System.Web;
-using System.Web.Services.Description;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Xml.Linq;
 
 
 public partial class _Default : System.Web.UI.Page
@@ -39,7 +30,7 @@ public partial class _Default : System.Web.UI.Page
 
         if (registro.Read())
         {
-           
+
             string valor = txtUser.Text.Trim();
             Response.Redirect("front/docentes/registrarHorario.aspx?texto=" + valor);
 
@@ -54,7 +45,7 @@ public partial class _Default : System.Web.UI.Page
             Response.Redirect("front/docentes/registrarHorario.aspx?texto=" + valor);
 
         }
-       
+
         conexionBD.Close();
     }
 

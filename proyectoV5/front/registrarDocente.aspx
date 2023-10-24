@@ -76,7 +76,7 @@
 
             <div class="input-box">
 
-                <asp:Label ID="lblCodigoMateria" runat="server" Text="Materia que imparte"></asp:Label>
+                <asp:Label ID="lblCodigoMateria" runat="server" Text="Materia que iparte"></asp:Label>
                 <asp:DropDownList class="op" ID="ddlMateria" runat="server"></asp:DropDownList>
                 <i class='bx bxs-user'></i>
             </div>

@@ -1,10 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 public partial class front_listarEstudiantes : System.Web.UI.Page
@@ -48,7 +44,7 @@ public partial class front_listarEstudiantes : System.Web.UI.Page
             conexionBD.Open();
             cmd.ExecuteNonQuery();
             conexionBD.Close();
-           // Response.Write("<script languaje='JavaScript'>alert('¡Registro actualizado!')</script>");
+            // Response.Write("<script languaje='JavaScript'>alert('¡Registro actualizado!')</script>");
         }
 
     }

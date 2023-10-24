@@ -95,7 +95,7 @@
                         </ul>
                     </li>
 
-                    <li><a href="docentes/registrarHorario.aspx">Configuraciones</a></li>
+                    <li><a>Configuraciones</a></li>
                 </ul>
             </div>
         <div class="contenedor_filtraciones">
