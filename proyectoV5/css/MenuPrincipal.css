@@ -31,7 +31,7 @@ p {
     }
 
 header {
-    
+
     background: rgba(0, 0, 0, 0.7);
     margin-right: 15px;
     width: 100%;
@@ -117,7 +117,7 @@ li {
 
 
 body {
-    background-image:url(../img/fondomenu.jpg) ;
+    background-image: url(../img/fondomenu.jpg);
     background-size: 1920px 1000px;
     background-repeat: no-repeat;
 }
