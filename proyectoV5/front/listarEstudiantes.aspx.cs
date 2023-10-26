@@ -90,4 +90,9 @@ public partial class front_listarEstudiantes : System.Web.UI.Page
             gdvEstudiante.DataBind();
         }
     }
+
+    protected void gdvEstudiante_RowCreated(object sender, GridViewRowEventArgs e)
+    {
+
+    }
 }

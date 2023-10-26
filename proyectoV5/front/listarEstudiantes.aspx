@@ -112,7 +112,7 @@
         </div>
 
         <asp:GridView ID="gdvEstudiante" runat="server" AutoGenerateColumns="False"
-            OnRowEditing="ModificarFila" OnRowUpdating="ActualizarFila" OnRowCancelingEdit="CancelarEdicion"
+            OnRowEditing="ModificarFila" OnRowUpdating="ActualizarFila" OnRowCancelingEdit="CancelarEdicion" 
             DataKeyNames="cedula_estudiante" >
             <Columns>
                 <asp:TemplateField HeaderText="Identificacion">
@@ -182,7 +182,7 @@
 
                 </asp:TemplateField>
 
-                <asp:CommandField HeaderText="Operaciones" ShowHeader="True" ShowEditButton="True" ButtonType="Button" />
+                <asp:CommandField HeaderText="Operaciones" ShowHeader="True" ShowEditButton="True"  ButtonType="Button" />
             </Columns>
         </asp:GridView>
 

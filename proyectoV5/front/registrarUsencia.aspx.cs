@@ -12,27 +12,34 @@ using System.Web.UI.WebControls;
 
 public partial class front_registrarUsencia : System.Web.UI.Page
 {
-    string cadenaConexion = System.Configuration.ConfigurationManager.ConnectionStrings["conexionCALUFA"].ConnectionString;
+    string cadenaConexion = ConfigurationManager.ConnectionStrings["conexionCALUFA"].ConnectionString;
 
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
         {
-            ListItem i;
-            i = new ListItem("Presente", "P");
-            DropDownList1.Items.Add(i);
-            i = new ListItem("Tardia", "T");
-            DropDownList1.Items.Add(i);
-            i = new ListItem("Tardia Justificada", "TJ");
-            DropDownList1.Items.Add(i);
-            i = new ListItem("Ausencia", "A");
-            DropDownList1.Items.Add(i);
-            i = new ListItem("Ausencia Justificada", "AJ");
-            DropDownList1.Items.Add(i);
+            
+            CargarDatos();
+
+           
         }
 
        
 
+    }
+    public void CargarDatos()
+    {
+        MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
+        MySqlDataAdapter adp = new MySqlDataAdapter("select * from usuario_estudiante", conexionBD);
+        DataTable dt = new DataTable();
+        adp.Fill(dt);
+        if (dt.Rows.Count > 0)
+        {
+            gdvEstudiante.DataSource = dt;
+            gdvEstudiante.DataBind();
+
+
+        }
     }
 
     protected void btn_registrar_Click(object sender, EventArgs e)
@@ -57,16 +64,21 @@ public partial class front_registrarUsencia : System.Web.UI.Page
          
         string mifecha = DateTime.Now.ToShortDateString();
 
-        conexionBD.Open();
-        MySqlCommand cmd = new MySqlCommand("insert into aucensia  (fecha,tipo_au,cant_au,cedula_estudiante,cod_materia) values ('"
-          + mifecha + "','" + DropDownList1.SelectedItem.Value.ToString() + "',' " + Convert.ToInt32(txtCantidad.Text) +
-          "','" + txtEstudiante.Text + "','" + txtMateria.Text + "')", conexionBD);
+        //conexionBD.Open();
+        //MySqlCommand cmd = new MySqlCommand("insert into aucensia  (fecha,tipo_au,cant_au,cedula_estudiante,cod_materia) values ('"
+        //  + mifecha + "','" + DropDownList1.SelectedItem.Value.ToString() + "',' " + Convert.ToInt32(txtCantidad.Text) +
+        //  "','" + txtEstudiante.Text + "','" + txtMateria.Text + "')", conexionBD);
 
-        cmd.ExecuteReader();
+        //cmd.ExecuteReader();
 
-        Response.Write("<script languaje='JavaScript'>alert('¡Los datos han sido guardados!')</script>");
+        //Response.Write("<script languaje='JavaScript'>alert('¡Los datos han sido guardados!')</script>");
 
-        conexionBD.Close();
+        //conexionBD.Close();
 
+    }
+
+    protected void gdvEstudiante_SelectedIndexChanged(object sender, EventArgs e)
+    {
+       
     }
 }

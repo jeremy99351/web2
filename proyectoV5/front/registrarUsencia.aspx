@@ -6,9 +6,60 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+    <style type="text/css">
+        table {
+            backdrop-filter: brightness(0.6);
+        }
+
+            table input {
+                width: 100%;
+                height: 45px;
+                background-color: lavender;
+                border: none;
+                outline: none;
+                border-radius: 40px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+                cursor: pointer;
+                font-size: 16px;
+                color: #333;
+                font-weight: 600;
+            }
+
+            table tr th {
+                padding: 15px;
+                border: 2px solid #000;
+                border-top: 2px solid #000;
+                width: 4%;
+                right: 90px;
+                background: lightblue;
+            }
+
+            table tr td {
+                padding: 15px;
+                border: 2px solid #000;
+                border-top: 2px solid #000;
+                width: 4%;
+                right: 150px;
+                background: transparent;
+                color: white;
+            }
+
+            table tbody {
+                margin-top: 15%;
+                padding: 15px;
+                border: 2px solid #000;
+                border-top: 2px solid #000;
+                width: 4%;
+                right: 150px;
+                background: transparent;
+                /* background: #F2F2F2; */
+            }
+    </style>
+
     <link rel="stylesheet" href="../loading.css" />
     <link rel="stylesheet" href="../css/listaAdmi.css" />
     <link rel="stylesheet" href="../css/nav.css" />
+
 
     <title>Registro de aucenia</title>
 </head>
@@ -45,51 +96,153 @@
             </ul>
         </div>
 
-        <div class="wrapper">
-            <form action="">
+        <asp:GridView ID="gdvEstudiante" runat="server" AutoGenerateColumns="False"
+            DataKeyNames="cedula_estudiante" OnSelectedIndexChanged="gdvEstudiante_SelectedIndexChanged">
+            <Columns>
+                <asp:TemplateField HeaderText="Identificacion">
+                    <ItemTemplate>
+                        <asp:Label ID="lblCorreo" runat="server" Text='<%# Eval("cedula_estudiante") %>'></asp:Label>
+                    </ItemTemplate>
 
-                <h1>Registrar Aucencias</h1>
+                </asp:TemplateField>
 
-                <div class="input-box">
-                    <asp:Label ID="lblEstudiante" runat="server" Text="Estudiante"></asp:Label>
-                    <asp:TextBox ID="txtEstudiante" runat="server"></asp:TextBox>
-                    <i class='bx bxs-user'></i>
-                </div>
+                <asp:TemplateField HeaderText="Nombre">
+                    <ItemTemplate>
+                        <asp:Label ID="lblContrasennia" runat="server" Text='<%# Eval("nombre") %>'></asp:Label>
+                    </ItemTemplate>
 
+                    <EditItemTemplate>
+                        <asp:TextBox ID="txtNombre" runat="server" Text='<%# Eval("nombre") %>'></asp:TextBox>
+                    </EditItemTemplate>
 
-                <div class="input-box">
-                    <asp:Label ID="lblCantidad" runat="server" Text="Cnatidad de auncencia"></asp:Label>
-                    <asp:TextBox ID="txtCantidad" runat="server"></asp:TextBox>
-                    <i class='bx bxs-user'></i>
-                </div>
+                </asp:TemplateField>
 
+                <asp:TemplateField HeaderText="Apellidos">
 
-                <div class="input-box">
-                    <asp:Label ID="lblMateria" runat="server" Text="Materia"></asp:Label>
-                    <asp:TextBox ID="txtMateria" runat="server"></asp:TextBox>
-                    <i class='bx bxs-user'></i>
-                </div>
+                    <ItemTemplate>
+                        <asp:Label ID="lblNombre" runat="server" Text='<%# Eval("primer_apellido") %>'></asp:Label>
+                        <asp:Label ID="lblApeliidos" runat="server" Text='<%# Eval("segundo_apellido") %>'></asp:Label>
 
+                    </ItemTemplate>
 
-                <div class="input-box">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="txtAp1" runat="server" Text='<%# Eval("primer_apellido") %>'></asp:TextBox>
+                        <asp:TextBox ID="txtAp2" runat="server" Text='<%#Eval("segundo_apellido") %>'></asp:TextBox>
 
-                    <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                    </EditItemTemplate>
 
-                    <i class='bx bxs-user'></i>
-                </div>
+                </asp:TemplateField>
 
+                <asp:TemplateField HeaderText="Seccion">
+                    <ItemTemplate>
+                        <asp:Label ID="lblSeccion" runat="server" Text='<%# Eval("cod_seccion") %>'></asp:Label>
+                    </ItemTemplate>
 
+                    <EditItemTemplate>
+                        <asp:TextBox ID="txtCodS" runat="server" Text='<%# Eval("cod_seccion") %>'></asp:TextBox>
+                    </EditItemTemplate>
 
+                </asp:TemplateField>
 
+                <asp:TemplateField HeaderText="Tipo Aucencia">
+                    <ItemTemplate>
+                        <asp:DropDownList ID="DropDownList1" runat="server">
+                            <asp:ListItem Value="P">PRESENTE</asp:ListItem>
+                            <asp:ListItem Value="AU">AUCENTE</asp:ListItem>
+                            <asp:ListItem Value="AUJ">AUCENTE JUSTIFICADO</asp:ListItem>
+                            <asp:ListItem Value="T">TARDIA</asp:ListItem>
+                            <asp:ListItem Value="TJ">TARDIA JUSTIFICADA</asp:ListItem>
+                            <asp:ListItem Value="EX">EXCAPADO</asp:ListItem>
+                        </asp:DropDownList>
+                    </ItemTemplate>
 
-                <asp:Button ID="btn_registrar" class="btn" runat="server" Text="Registrar" OnClick="btn_registrar_Click" />
+                    <EditItemTemplate>
+                        
+                    </EditItemTemplate>
 
-            </form>
+                </asp:TemplateField>
 
-        </div>
+                <asp:CommandField HeaderText="Operaciones" ShowHeader="True" ButtonType="Button" NewText="Guardar" EditText="GUARDAR" ShowCancelButton="False" ShowEditButton="True" />
+            </Columns>
+        </asp:GridView>
 
+        
+       
+        <%--    <asp:GridView ID="gdvAucencia" runat="server" AutoGenerateColumns="False"
+           OnRowEditing="ModificarFila" OnRowUpdating="ActualizarFila" OnRowCancelingEdit="CancelarEdicion" 
+            DataKeyNames="cedula_estudiante" >
 
+            <Columns>
+                <asp:TemplateField HeaderText="Identificacion">
+                    <ItemTemplate>
+                        <asp:Label ID="lbl" runat="server" Text='<%# Eval("cedula_estudiante") %>'></asp:Label>
+                    </ItemTemplate>
 
+                </asp:TemplateField>
+
+                <asp:TemplateField HeaderText="Nombre">
+                    <ItemTemplate>
+                        <asp:Label ID="lblContrasennia" runat="server" Text='<%# Eval("nombre") %>'></asp:Label>
+                    </ItemTemplate>
+
+                    <EditItemTemplate>
+                        <asp:TextBox ID="txtNombre" runat="server" Text='<%# Eval("nombre") %>'></asp:TextBox>
+                    </EditItemTemplate>
+
+                </asp:TemplateField>
+
+                <asp:TemplateField HeaderText="Apellidos">
+
+                    <ItemTemplate>
+                        <asp:Label ID="lblNombre" runat="server" Text='<%# Eval("primer_apellido") %>'></asp:Label>
+                        <asp:Label ID="lblApeliidos" runat="server" Text='<%# Eval("segundo_apellido") %>'></asp:Label>
+
+                    </ItemTemplate>
+
+                    <EditItemTemplate>
+                        <asp:TextBox ID="txtAp1" runat="server" Text='<%# Eval("primer_apellido") %>'></asp:TextBox>
+                        <asp:TextBox ID="txtAp2" runat="server" Text='<%#Eval("segundo_apellido") %>'></asp:TextBox>
+
+                    </EditItemTemplate>
+
+                </asp:TemplateField>
+
+                 <asp:TemplateField HeaderText="Codigo">
+                    <ItemTemplate>
+                        <asp:Label ID="lblCedula" runat="server" Text='<%# Eval("cod_usuario") %>'></asp:Label>
+                    </ItemTemplate>
+
+                    <EditItemTemplate>
+                        <asp:TextBox ID="txtCod" runat="server" Text='<%# Eval("cod_usuario") %>'></asp:TextBox>
+                    </EditItemTemplate>
+
+                </asp:TemplateField>
+
+                <asp:TemplateField HeaderText="Seccion">
+                    <ItemTemplate>
+                        <asp:Label ID="lblSeccion" runat="server" Text='<%# Eval("cod_seccion") %>'></asp:Label>
+                    </ItemTemplate>
+
+                    <EditItemTemplate>
+                        <asp:TextBox ID="txtCodS" runat="server" Text='<%# Eval("cod_seccion") %>'></asp:TextBox>
+                    </EditItemTemplate>
+
+                </asp:TemplateField>
+
+                <asp:TemplateField HeaderText="Correo">
+                    <ItemTemplate>
+                        <asp:Label ID="lblCor" runat="server" Text='<%# Eval("correo") %>'></asp:Label>
+                    </ItemTemplate>
+
+                    <EditItemTemplate>
+                        <asp:TextBox ID="txtCorreo" runat="server" Text='<%# Eval("correo") %>'></asp:TextBox>
+                    </EditItemTemplate>
+
+                </asp:TemplateField>
+
+                <asp:CommandField HeaderText="Operaciones" ShowHeader="True" ShowEditButton="True" ButtonType="Button" NewText="GUARDAR" ShowInsertButton="True" />
+            </Columns>
+        </asp:GridView>--%>
     </form>
 </body>
 </html>
