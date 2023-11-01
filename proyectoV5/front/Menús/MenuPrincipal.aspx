@@ -47,7 +47,7 @@
                 <a href="#">Cuenta</a>
                 <ul class="menu-vertical">
                     <li><a href="">iIniciar sesion</a></li>
-                    <li><a href="">cambiar cuenta</a></li>
+                    <li><a id="perfil" href="PerfilUsuario.aspx">perfil</a></li>
                     <li><a href="">configuracion de la cuenta</a></li>
                 </ul>
             </li>
