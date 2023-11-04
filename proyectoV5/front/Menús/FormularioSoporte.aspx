@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Soporte</title>
-    <link rel="stylesheet" href="Formulario.css">
+    <link rel="stylesheet" href="../../css/Formulario.css">
 </head>
 
 <body>
