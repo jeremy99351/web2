@@ -5,41 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/Preguntas.css"
-    <title>Preguntas Frecuentes</title>
+ 
 </head>
+   
 <body>
     <header>
-        <h1>Preguntas Frecuentes</h1>
+        <h1>Preguntas Frecuentes - LaSu</h1>
     </header>
     <div class="container">
         <div class="faq-item">
-            <div class="faq-question">¿Qué es HTML?</div>
-            <div class="faq-answer">
-                HTML (Lenguaje de Marcado de Hipertexto) es el estándar utilizado para crear páginas web. Se utiliza para estructurar el contenido de una página web utilizando una variedad de elementos y etiquetas.
+           <div class="faq-question" onclick="toggleAnswer('answer1')">1. ¿Cómo puedo registrar mi cuenta en LaSu?</div>
+            <div class="faq-answer" id="answer1">
+                Puedes registrarte en LaSu como profesor siguiendo estos pasos: [Descripción detallada de los pasos para registrarse].
             </div>
         </div>
         <div class="faq-item">
-            <div class="faq-question">¿Qué es CSS?</div>
-            <div class="faq-answer">
-                CSS (Hojas de Estilo en Cascada) se utiliza para controlar la presentación y el diseño de una página web. Permite definir el aspecto de los elementos HTML, como colores, fuentes, márgenes y más.
+            <div class="faq-question" onclick="toggleAnswer('answer2')">2. ¿Cómo tomo la asistencia de mis alumnos con LaSu?</div>
+            <div class="faq-answer" id="answer2">
+                Para tomar la asistencia de tus alumnos con LaSu, sigue estos pasos: [Instrucciones detalladas para tomar asistencia].
             </div>
         </div>
         <div class="faq-item">
-            <div class="faq-question">¿Cómo se crea una página web?</div>
-            <div class="faq-answer">
-                Para crear una página web, necesitas un editor de código, como Visual Studio Code. Luego, escribe el código HTML y CSS necesario para definir la estructura y el diseño de la página.
-            </div>
-        </div>
+    <div class="faq-question" onclick="toggleAnswer('answer3')">3. ¿Puedo personalizar mi lista de alumnos en LaSu?</div>
+    <div class="faq-answer" id="answer3">
+        Sí, puedes personalizar tu lista de alumnos. Aquí te mostramos cómo: [Instrucciones para personalizar la lista de alumnos].
     </div>
-
+</div>
+        </div>
+        <!-- Agregar -->
+    
     <script>
-        const faqQuestions = document.querySelectorAll('.faq-question');
-        
-        faqQuestions.forEach(question => {
-            question.addEventListener('click', () => {
-                question.classList.toggle('open');
-            });
-        });
-    </script>
-</body>
+    function toggleAnswer(id) {
+        var answer = document.getElementById(id);
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+   </body>
+    
+  
 </html>
+
