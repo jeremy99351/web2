@@ -12,10 +12,18 @@ public partial class front_MenuPrincipal : System.Web.UI.Page
     string cadenaConexion = System.Configuration.ConfigurationManager.ConnectionStrings["conexionCALUFA"].ConnectionString;
    
 
-    protected void Perfil_Click(object sender, EventArgs e)
+    protected void Usuario_Click(object sender, EventArgs e)
     {
         // Código para manejar el evento de clic en el enlace "perfil"
-        Response.Redirect("PerfilUsuario.aspx");
-    }
+        Response.Redirect("Perfil.aspx");
 
+    }
+    protected void Formulario_click(object sender,EventArgs e)
+    {
+        Response.Redirect("FormularioSoporte.aspx");
+    }
+    protected void Registrar_click(object sender, EventArgs e)
+    {
+        Response.Redirect("registrarUsuario.aspx");
+    }
 }

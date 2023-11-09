@@ -46,8 +46,8 @@
                 </svg>
                 <a href="#">Cuenta</a>
                 <ul class="menu-vertical">
-                    <li><a href="">iIniciar sesion</a></li>
-                    <li><a id="perfil" href="PerfilUsuario.aspx">perfil</a></li>
+                    <li><a id="Registrar" href="../../front/registrarUsuario.aspx">iIniciar sesion</a></li>
+                    <li><a id="Usuario" href="Perfil.aspx">perfil</a></li>
                     <li><a href="">configuracion de la cuenta</a></li>
                 </ul>
             </li>
@@ -61,7 +61,7 @@
                 <li><a href="">idioma</a></li>
                 <li><a href="">configuracion de la cuenta</a></li>
             </ul>
-            </li>
+            </li>s
 
 
             <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -73,6 +73,7 @@
                 <li><a href="">contactenos</a></li>
                 <li><a href="">infomacion</a></li>
                 <li><a href="">Preguntas frecuentes</a></li>
+                 <li><a id="Formulario" href="FormularioSoporte.aspx">Formulario de quejas</a></li>
             </ul>
             </li>
              
