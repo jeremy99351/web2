@@ -72,7 +72,7 @@
                 <li><a href="">Ayuda</a></li>
                 <li><a href="">contactenos</a></li>
                 <li><a href="">infomacion</a></li>
-                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a id="Pregunta" href="PreguntasFrecuentes.aspx">Preguntas frecuentes</a></li>
                  <li><a id="Formulario" href="FormularioSoporte.aspx">Formulario de quejas</a></li>
             </ul>
             </li>

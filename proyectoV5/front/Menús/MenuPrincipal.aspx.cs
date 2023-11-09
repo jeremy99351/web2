@@ -24,6 +24,10 @@ public partial class front_MenuPrincipal : System.Web.UI.Page
     }
     protected void Registrar_click(object sender, EventArgs e)
     {
-        Response.Redirect("registrarUsuario.aspx");
+        Response.Redirect("../../front/registrarUsuario.aspx");
+    }
+    protected void Pregunta_click(object sender, EventArgs e)
+    {
+        Response.Redirect("PreguntasFrecuentes.aspx");
     }
 }
