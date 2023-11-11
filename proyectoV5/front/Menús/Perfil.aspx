@@ -40,14 +40,14 @@
             <div class="perfil-usuario-footer">
                 <ul class="lista-datos">
                     <li><i class="icono fas fa-map-signs"></i> Direccion de usuario:</li>
-                    <li><i class="icono fas fa-phone-alt"></i> Telefono:</li>
-                    <li><i class="icono fas fa-briefcase"></i> Trabaja en.</li>
-                    <li><i class="icono fas fa-building"></i> Cargo</li>
+                    <li><i class="icono fas fa-phone-alt"></i> Telefono:71287875</li>
+                    <li><i class="icono fas fa-briefcase"></i> Trabaja en:Liceo del coyol</li>
+                    <li><i class="icono fas fa-building"></i> Cargo:docente</li>
                 </ul>
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-map-marker-alt"></i> Ubicacion.</li>
-                    <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento.</li>
-                    <li><i class="icono fas fa-user-check"></i> Registro.</li>
+                    <li><i class="icono fas fa-map-marker-alt"></i> Ubicacion:San Martin</li>
+                    <li><i class="icono fas fa-calendar-alt"></i> Fecha nacimiento:17/06/02</li>
+                    <li><i class="icono fas fa-user-check"></i> Registro:05</li>
                     <li><i class="icono fas fa-share-alt"></i> Redes sociales.</li>
                 </ul>
             </div>
@@ -69,7 +69,7 @@
         <a target="_blank" href="https://www.youtube.com/channel/UC15DkMZQ80aoW_Rqk4n2T_w"><i class="fab fa-youtube"></i></a>
     </div>
 </div>
-<!--====  End of tarjeta  ====-->
+<!--====  fin  tarjeta  ====-->
 </body>
 
 </html>
