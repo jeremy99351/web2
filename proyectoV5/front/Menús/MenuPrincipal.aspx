@@ -10,9 +10,22 @@
 
 <title>Menú</title>
 
-    <div id="header">
-        <h1 id="Titulo">Lasu </h1>
-   
+   <div id="header">
+    <h1 id="Titulo">Lasu</h1>
+    <div id="user-menu">
+        <div id="user-avatar">
+            <!-- Agrega la imagen del avatar aquí -->
+            <img src="SpS.jpg" alt="Avatar del usuario">
+        </div>
+        <div id="user-dropdown">
+            <span>Alvaro Hidalgo</span>
+            <ul>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Cambiar Cuenta</a></li>
+                <li><a href="#">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
  
 </head>

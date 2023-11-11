@@ -18,6 +18,65 @@ p {
 }
 
 
+
+/*Configuracion del Avatar*/
+
+#user-menu {
+    display: flex;
+    align-items: center;
+}
+
+#user-avatar img {
+    width: 40px; /* Ajusta el tamaño del avatar */
+    height: 40px;
+    border-radius: 50%; /* Efecto circular para la imagen del avatar */
+    margin-right: 10px; /* Espacio entre el avatar y el nombre de usuario */
+}
+
+#user-dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+    #user-dropdown span {
+        font-size: 16px; /* Ajusta el tamaño de la fuente del nombre de usuario */
+        color: #FFF; /* Ajusta el color del texto */
+        cursor: pointer;
+    }
+
+    #user-dropdown ul {
+        position: absolute;
+        top: 100%;
+        left: 0; /* Cambia de "right" a "left" para alinear a la izquierda */
+        display: none;
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+    }
+
+    #user-dropdown:hover ul {
+        display: block;
+    }
+
+    #user-dropdown li {
+        margin-bottom: 5px;
+    }
+
+    #user-dropdown a {
+        text-decoration: none;
+        color: #FFF;
+    }
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: rgba(0, 0, 0, 0.7);*/
+    padding: 10px 20px; /* Ajusta el espaciado */
+}
+
+
+
 /*estilo header*/
 
 #header {
