@@ -1,16 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="MenuPrincipal.aspx.cs" Inherits="front_Menús_MenuPrincipal" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="MenuPrincipal1.aspx.cs" Inherits="front_MenuPrincipal" %>
 
 <!DOCTYPE html>
+<html lang="en">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-       
-        
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -72,8 +65,7 @@
                     <ul class="menu-vertical">
                         <li><a id="Registrar" href="../registrarUsuario.aspx">iIniciar sesion</a></li>
                         <li><a id="Usuario" href="Perfil.aspx">perfil</a></li>
-                        <li><a href="#">configuracion de la cuenta</a></li>\
-                        <li><a href="../listarEstudiantes.aspx">opcion de jeremy</a></li>
+                        <li><a href="">configuracion de la cuenta</a></li>
                     </ul>
                 </li>
                 <li>
@@ -193,6 +185,5 @@
 
 
 
-    </form>
-</body>
+
 </html>

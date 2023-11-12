@@ -92,7 +92,7 @@
                         </ul>
                     </li>
 
-                    <li><a>Configuraciones</a></li>
+                    <li><a href="Menús/FormularioSoporte.aspx">Configuraciones</a></li>
                 </ul>
             </div>
 
