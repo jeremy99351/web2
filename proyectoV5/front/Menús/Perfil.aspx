@@ -105,6 +105,57 @@ function toggleVisibilityRegistro() {
             btnEditarRegistro.style.display = 'none';
         }
 
+    
+        
+            function cambiarAvatar() {
+        var fileInput = document.getElementById('fileAvatar');
+            var avatarPreview = document.getElementById('avatarPreview');
+
+            fileInput.addEventListener('change', function () {
+            var file = fileInput.files[0];
+
+            if (file) {
+                var reader = new FileReader();
+
+            reader.onload = function (e) {
+                avatarPreview.src = e.target.result;
+                };
+
+            reader.readAsDataURL(file);
+            }
+        });
+
+            fileInput.click();
+    }
+
+        function cambiarFondo(input) {
+            var fondoContainer = document.getElementById('fondoContainer');
+            var file = input.files[0];
+
+            if (file) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    fondoContainer.style.backgroundImage = 'url(' + e.target.result + ')';
+                    fondoContainer.style.backgroundRepeat = 'no-repeat';
+                    fondoContainer.style.backgroundPosition = 'center center';
+                    fondoContainer.style.backgroundSize = 'cover';
+                    fondoContainer.style.height = '100%';
+                };
+
+                reader.readAsDataURL(file);
+            }
+        }
+
+        
+
+        
+
+        
+
+       
+
+       
 
     </script>
 </head>
@@ -113,25 +164,28 @@ function toggleVisibilityRegistro() {
     <form id="form1" runat="server">
         <section class="seccion-perfil-usuario">
             <div class="perfil-usuario-header">
-                <div class="perfil-usuario-portada">
-                    <div class="perfil-usuario-avatar">
-                        <img src="http://localhost/multimedia/relleno/img-c9.png" alt="img-avatar">
-                        <button type="button" class="boton-avatar">
-                            <i class="far fa-image"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                                </svg>
-                            </i>
-                        </button>
-                    </div>
-                    <button type="button" class="boton-portada">
-                        <i class="far fa-image"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                            </svg>
-                        </i> Cambiar fondo
-                    </button>
-                </div>
+              <div class="perfil-usuario-portada">
+    <div class="perfil-usuario-avatar">
+        <img id="avatarPreview" src="http://localhost/multimedia/relleno/img-c9.png" alt="img-avatar">
+        <input type="file" id="fileAvatar" accept="image/*" style="display: none;" />
+    </div>
+    <button type="button" class="boton-avatar" onclick="cambiarAvatar()">
+        <i class="far fa-image"></i> Cambiar avatar
+    </button>
+   <div class="perfil-usuario-fondo" id="fondoContainer">
+    <input type="file" id="fileFondo" accept="image/*" style="display: none;" onchange="cambiarFondo(this)" />
+    <button type="button" class="boton-fondo" onclick="document.getElementById('fileFondo').click()">
+        <i class="far fa-image"></i> Cambiar fondo
+    </button>
+</div>
+
+
+</div>
+
+</div>
+
+    
+</div>
             </div>
             <div class="perfil-usuario-body">
                 <div class="perfil-usuario-bio">
