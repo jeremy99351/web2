@@ -21,8 +21,7 @@ body {
 
 /*=====================================
 estilos de la utilidad
-Copiar esto
-=====================================*/
+*/
 .seccion-perfil-usuario .perfil-usuario-body,
 .seccion-perfil-usuario {
     display: flex;
@@ -136,7 +135,9 @@ svg{
     border-radius: 15px;
     width: 100%;
 }
-
+/* footer usuario*/
+    
+/*fin*/
 .seccion-perfil-usuario .perfil-usuario-bio {
     margin-bottom: 1.25rem;
     text-align: center;
