@@ -72,8 +72,8 @@
                     <ul class="menu-vertical">
                         <li><a id="Registrar" href="../registrarUsuario.aspx">iIniciar sesion</a></li>
                         <li><a id="Usuario" href="Perfil.aspx">perfil</a></li>
-                        <li><a href="#">configuracion de la cuenta</a></li>\
-                        <li><a href="../listarEstudiantes.aspx">opcion de jeremy</a></li>
+                        <li><a id="Usuarios" href="../listaUsuarios.aspx">Usuarios</li>\
+                        <li><a id="Estudiantes" href="../listarEstudiantes.aspx">opcion de jeremy</a></li>
                     </ul>
                 </li>
                 <li>

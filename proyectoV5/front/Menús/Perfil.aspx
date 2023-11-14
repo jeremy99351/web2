@@ -178,15 +178,8 @@ function toggleVisibilityRegistro() {
         <i class="far fa-image"></i> Cambiar fondo
     </button>
 </div>
-
-
 </div>
-
 </div>
-
-    
-</div>
-            </div>
             <div class="perfil-usuario-body">
                 <div class="perfil-usuario-bio">
                     <h3 class="titulo">Alvaro Hidalgo Gomez</h3>
@@ -233,7 +226,7 @@ function toggleVisibilityRegistro() {
         <asp:Button ID="btnCancelarCargo" runat="server" Text="Cancelar" CssClass="editarBtn" OnClientClick="return false;" Visible="false" />
         <asp:Button ID="btnEditarCargo" runat="server" Text="Editar" CssClass="editarBtn" OnClick="toggleVisibilityCargo" />
     </li>
-                      
+                    </ul>  
                     <ul class="lista-datos">
 
                    <li>
@@ -279,7 +272,7 @@ function toggleVisibilityRegistro() {
                     </ul>
                 </div>
                 <div class="redes-sociales">
-                    <a href="" class="boton-redes facebook fab fa-facebook-f"><i class="icon-facebook"></i></a>
+                    <a href="MenuPrincipal.aspx" class="boton-redes facebook fab fa-facebook-f">Menú<i class="icon-facebook"></i></a>
                     <a href="" class="boton-redes twitter fab fa-twitter"><i class="icon-twitter"></i></a>
                     <a href="" class="boton-redes instagram fab fa-instagram"><i class="icon-instagram"></i></a>
                 </div>
