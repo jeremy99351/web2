@@ -178,6 +178,7 @@
 
                     <EditItemTemplate>
                         <asp:TextBox ID="txtCorreo" runat="server" Text='<%# Eval("correo") %>'></asp:TextBox>
+                        
                     </EditItemTemplate>
 
                 </asp:TemplateField>

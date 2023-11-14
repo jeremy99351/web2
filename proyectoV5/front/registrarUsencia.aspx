@@ -59,13 +59,23 @@
     <link rel="stylesheet" href="../loading.css" />
     <link rel="stylesheet" href="../css/listaAdmi.css" />
     <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/sweetalert2.css" />
 
 
     <title>Registro de aucenia</title>
+    <script src="../js/sweetalert2.js" type="text/javascript"></script>
+    <script>
+        function alertteme(){
+            Swal.fire({
+                title: "YA REGISTRADO",
+                text: "YA HA REGISTRADO LA SISTENCIA ",
+                icon: "warning"
+            });
+        }
+    </script>
 </head>
 <body>
-    <form id="form1" runat="server">
-
+    <form id="form1" runat="server" autocomplete="on">
 
         <div id="header">
             <ul class="nav">
@@ -96,10 +106,10 @@
             </ul>
         </div>
 
-        <asp:GridView ID="gdvEstudiante" runat="server" AutoGenerateColumns="False" 
-             OnRowEditing="ModificarFila" OnRowUpdating="ActualizarFila" OnRowCancelingEdit="CancelarEdicion" 
-            DataKeyNames="cedula_estudiante">
+        <asp:GridView ID="gdvEstudiante" runat="server" AutoGenerateColumns="False"
+            OnRowEditing="ModificarFila"  OnRowUpdating="ActualizarFila" DataKeyNames="cedula_estudiante">
             <Columns>
+
                 <asp:TemplateField HeaderText="Identificacion">
                     <ItemTemplate>
                         <asp:Label ID="lblId" runat="server" Text='<%# Eval("cedula_estudiante") %>'></asp:Label>
@@ -112,7 +122,7 @@
                         <asp:Label ID="lblNombre" runat="server" Text='<%# Eval("nombre") %>'></asp:Label>
                     </ItemTemplate>
 
-                   
+
 
                 </asp:TemplateField>
 
@@ -124,7 +134,7 @@
 
                     </ItemTemplate>
 
-                   
+
 
                 </asp:TemplateField>
 
@@ -138,20 +148,24 @@
                 <asp:TemplateField HeaderText="Tipo Aucencia">
 
                     <ItemTemplate>
+                        <select id="slTP" runat="server">
+                            <option value="P">PRESENTE</option>
+                            <option value="AU">AUCENTE</option>
+                            <option value="AUJ">AUSENCIA JUSTIFICADA</option>
+                            <option value="T">TARDIA</option>
+                            <option value="TJ">TARDIA JUSTIFICADA</option>
+                            <option value="EX">EXCAPADO</option>
+                        </select>
+
                     </ItemTemplate>
+
                 </asp:TemplateField>
 
-                <asp:TemplateField HeaderText="">
-                    <ItemTemplate>
-                        <asp:Button ID="Guardar" runat="server" Text="Guardar" OnClick="btn_registrar_Click" />
-                    </ItemTemplate>
 
-                </asp:TemplateField>
-                <asp:CommandField ShowEditButton="True" />
+                <asp:CommandField ButtonType="Button" EditText="GUARDAR" ShowEditButton="True" ShowCancelButton="False" UpdateText="GUARDAR" ShowHeader="True"  />
             </Columns>
         </asp:GridView>
         <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-        
         <select id="slTP" runat="server">
             <option value="P">PRESENTE</option>
             <option value="AU">AUCENTE</option>
@@ -161,81 +175,8 @@
             <option value="EX">EXCAPADO</option>
         </select>
 
-        <%--    <asp:GridView ID="gdvAucencia" runat="server" AutoGenerateColumns="False"
-           OnRowEditing="ModificarFila" OnRowUpdating="ActualizarFila" OnRowCancelingEdit="CancelarEdicion" 
-            DataKeyNames="cedula_estudiante" >
 
-            <Columns>
-                <asp:TemplateField HeaderText="Identificacion">
-                    <ItemTemplate>
-                        <asp:Label ID="lbl" runat="server" Text='<%# Eval("cedula_estudiante") %>'></asp:Label>
-                    </ItemTemplate>
 
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="Nombre">
-                    <ItemTemplate>
-                        <asp:Label ID="lblContrasennia" runat="server" Text='<%# Eval("nombre") %>'></asp:Label>
-                    </ItemTemplate>
-
-                    <EditItemTemplate>
-                        <asp:TextBox ID="txtNombre" runat="server" Text='<%# Eval("nombre") %>'></asp:TextBox>
-                    </EditItemTemplate>
-
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="Apellidos">
-
-                    <ItemTemplate>
-                        <asp:Label ID="lblNombre" runat="server" Text='<%# Eval("primer_apellido") %>'></asp:Label>
-                        <asp:Label ID="lblApeliidos" runat="server" Text='<%# Eval("segundo_apellido") %>'></asp:Label>
-
-                    </ItemTemplate>
-
-                    <EditItemTemplate>
-                        <asp:TextBox ID="txtAp1" runat="server" Text='<%# Eval("primer_apellido") %>'></asp:TextBox>
-                        <asp:TextBox ID="txtAp2" runat="server" Text='<%#Eval("segundo_apellido") %>'></asp:TextBox>
-
-                    </EditItemTemplate>
-
-                </asp:TemplateField>
-
-                 <asp:TemplateField HeaderText="Codigo">
-                    <ItemTemplate>
-                        <asp:Label ID="lblCedula" runat="server" Text='<%# Eval("cod_usuario") %>'></asp:Label>
-                    </ItemTemplate>
-
-                    <EditItemTemplate>
-                        <asp:TextBox ID="txtCod" runat="server" Text='<%# Eval("cod_usuario") %>'></asp:TextBox>
-                    </EditItemTemplate>
-
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="Seccion">
-                    <ItemTemplate>
-                        <asp:Label ID="lblSeccion" runat="server" Text='<%# Eval("cod_seccion") %>'></asp:Label>
-                    </ItemTemplate>
-
-                    <EditItemTemplate>
-                        <asp:TextBox ID="txtCodS" runat="server" Text='<%# Eval("cod_seccion") %>'></asp:TextBox>
-                    </EditItemTemplate>
-
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="Correo">
-                    <ItemTemplate>
-                        <asp:Label ID="lblCor" runat="server" Text='<%# Eval("correo") %>'></asp:Label>
-                    </ItemTemplate>
-
-                    <EditItemTemplate>
-                        <asp:TextBox ID="txtCorreo" runat="server" Text='<%# Eval("correo") %>'></asp:TextBox>
-                    </EditItemTemplate>
-
-                </asp:TemplateField>
-
-                <asp:CommandField HeaderText="Operaciones" ShowHeader="True" ShowEditButton="True" ButtonType="Button" NewText="GUARDAR" ShowInsertButton="True" />
-            </Columns>
-        </asp:GridView>--%>
     </form>
 </body>
 </html>
