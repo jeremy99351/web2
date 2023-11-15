@@ -101,11 +101,10 @@
           </svg>
           <a href="">Enlace 4</a>
         </li>
-        <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-          </svg>
+        <li>  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                    </svg>
+                    <a href="MenuConfiguracion.aspx?config=cambiarColores">Cambiar Colores</a>
           <a href="">Enlace 5</a>
         </li>
         <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -184,10 +183,10 @@
   <div class="RS">
     <p>Nuestras redes sociales
     <ul>
-      <li><img src="../img/icons8-facebook-48.png" alt="Facebook"></li>
-      <li><img src="WEB/img/instagram_logo.png" alt="Instagram"></li>
-      <li><img src="WEB/img/twitter_logo.png" alt="Twitter"></li>
-      <li><img src="WEB/img/tiktok_logo.png" alt="Tiktok"></li>
+      <li><img src="../../img/icons8-facebook-48.png" alt="Facebook"></li>
+      <li><img src="../../img/icons8-insta-48.png" alt="Instagram"></li>
+      <li><img src="../../img/icons8-twitter-cuadrado-48.png" alt="Twitter"></li>
+     
     </ul>
     </p>
   </div>
