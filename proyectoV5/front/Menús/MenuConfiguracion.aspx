@@ -184,7 +184,7 @@
   <div class="RS">
     <p>Nuestras redes sociales
     <ul>
-      <li><img src="WEB/img/facebook_logo.png" alt="Facebook"></li>
+      <li><img src="../img/icons8-facebook-48.png" alt="Facebook"></li>
       <li><img src="WEB/img/instagram_logo.png" alt="Instagram"></li>
       <li><img src="WEB/img/twitter_logo.png" alt="Twitter"></li>
       <li><img src="WEB/img/tiktok_logo.png" alt="Tiktok"></li>
