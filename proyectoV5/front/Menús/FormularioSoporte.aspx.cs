@@ -29,7 +29,7 @@ public partial class front_FormularioSoporte : System.Web.UI.Page
 
         // Configura el cliente SMTP
         SmtpClient smtpClient = new SmtpClient(smtpServer);
-        smtpClient.Port = 25; // Puerto SMTP
+        smtpClient.Port = 25;  // Puerto SMTP
         smtpClient.Credentials = new NetworkCredential(smtpUsername, smtpPassword);
         smtpClient.EnableSsl = true; // Habilitar SSL si es necesario
 
