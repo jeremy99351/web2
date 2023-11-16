@@ -12,7 +12,7 @@
 <body>
     <h1>Formulario de Soporte</h1>
 
-    <form action="procesar_formulario.php" method="post">
+    <form >
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
         
@@ -25,6 +25,7 @@
         <label for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
         
-        <input type="submit" value="Enviar">
+        <input id="Button1" type="button" value="button" onclick="enviar"/>
+      
     </form>
 </body>
