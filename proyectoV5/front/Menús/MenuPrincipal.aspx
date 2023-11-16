@@ -73,7 +73,6 @@
                         <li><a id="Registrar" href="../registrarUsuario.aspx">iIniciar sesion</a></li>
                         <li><a id="Usuario" href="Perfil.aspx">perfil</a></li>
                         <li><a id="Usuarios" href="../listaUsuarios.aspx">Usuarios</li>\
-                        <li><a id="Estudiantes" href="../listarEstudiantes.aspx">opcion de jeremy</a></li>
                     </ul>
                 </li>
                 <li>
@@ -83,8 +82,7 @@
                     </svg>
                     <a href="#">Configuración</a>
                     <ul class="menu-vertical">
-                        <li><a href="">Ajustes</a></li>
-                        <li><a href="">idioma</a></li>
+                        <li><a href="MenuConfiguracion.aspx">Ajustes</a></li>
                         <li><a href="">configuracion de la cuenta</a></li>
                     </ul>
                 </li>
@@ -97,8 +95,6 @@
                 </svg>
                 <a href="">soporte</a>
                 <ul class="menu-vertical">
-                    <li><a href="">Ayuda</a></li>
-                    <li><a href="">contactenos</a></li>
                     <li><a href="">infomacion</a></li>
                     <li><a id="Pregunta" href="PreguntasFrecuentes.aspx">Preguntas frecuentes</a></li>
                     <li><a id="Formulario" href="FormularioSoporte.aspx">Formulario de quejas</a></li>
@@ -111,32 +107,21 @@
         </nav>
     </header>
     <section class="contenido wrapper">
-        <h2>LOREMISUMP</h2>
+        <h2>Saludos a la comunidad escolar!</h2>
 
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo at, libero dolorum temporibus ea, cum natus fugiat non illo velit distinctio. Veritatis recusandae expedita quod ipsam perferendis, blanditiis quasi consectetur!
-        Ducimus illum dolores nam nostrum at corrupti, optio praesentium, molestias ab magnam delectus suscipit omnis autem excepturi quasi vel eligendi voluptas voluptatibus saepe natus dolore? Natus sit cum culpa ipsa.
-        Totam consectetur rem aliquid in autem, iusto, porro mollitia, quae nulla magnam fugit inventore. Sunt, sapiente rem inventore reiciendis nesciunt impedit natus, quos dolore eveniet minima cum veniam, hic accusamus.
-        Magni aperiam iure ad consequuntur quas error reiciendis. Eius, iusto. Corrupti, ratione odio? Assumenda maiores exercitationem distinctio commodi fugiat temporibus earum, nobis nulla ducimus minima vel nemo nisi, adipisci incidunt.
-        Laborum officiis rerum aliquid dicta libero. Cum quo quisquam reprehenderit voluptate earum fugiat ad soluta, perspiciatis modi suscipit vitae. Quas nostrum, recusandae aperiam ipsum quod repudiandae! Dolores totam animi perspiciatis?
-        Sint optio, assumenda quasi quo modi placeat beatae maxime asperiores? Aperiam corporis assumenda illum dolor animi tempora ex obcaecati. Nostrum praesentium laborum quo sequi accusantium quam laboriosam nesciunt perspiciatis possimus.
-        Saepe vel veritatis tenetur omnis at non voluptas quisquam blanditiis cumque eligendi, explicabo animi laudantium quia ipsam, veniam provident asperiores temporibus quod repellendus aperiam minus suscipit, sit iure. Neque, magni!
-        Eius libero enim iure odio, incidunt nesciunt omnis perferendis hic nam quasi non harum blanditiis ipsam maiores dolorem mollitia quidem maxime dolores beatae, reprehenderit molestiae, officiis eum cum cumque. Cupiditate.
-        Fugit, eius assumenda vitae in tempora ab sint possimus ducimus obcaecati iure corporis amet nobis adipisci dolores ea? Dolorem ea possimus at ipsa quae vitae dolores illum atque accusamus enim?
-        Officia, ut? Blanditiis, voluptate molestiae facilis non, suscipit voluptatum porro saepe labore alias iste, accusamus corrupti! Eos laudantium ad reprehenderit cum magni culpa ducimus. Autem repellendus sapiente ab quis ut.
-        Explicabo animi delectus repudiandae minima, debitis rem numquam modi dolore corrupti? Quas impedit pariatur veniam quo itaque nulla sint voluptatibus molestiae consequuntur nam, enim, velit similique corrupti, in nobis provident.
-        Ut veniam quaerat cum expedita debitis distinctio aperiam quis possimus tenetur error quia itaque, nisi illum. Cum itaque, commodi, expedita hic possimus laborum ex labore ipsa debitis quaerat harum ut.
-        Totam in exercitationem quo expedita ullam deleniti iusto ipsa consectetur. Obcaecati perspiciatis sequi eveniet assumenda, ipsa fuga, consequuntur molestias et deleniti, eum in ex voluptates cum magni soluta! Repudiandae, nulla.
-        Nostrum accusantium tempora ipsam explicabo unde accusamus, quis repellat odio, cumque ducimus sit animi nam, adipisci eos repellendus minima? Doloremque dolore quasi officia asperiores ex sed iusto mollitia voluptates temporibus?
-        Velit illo mollitia reprehenderit sequi nostrum voluptatem ducimus doloremque, quisquam saepe consequatur possimus ea, amet doloribus suscipit veritatis atque. Temporibus, pariatur dicta totam consectetur mollitia dolorem? Hic quibusdam perferendis ad!
-        Aspernatur alias sed accusamus vitae aliquid ipsam laborum deleniti recusandae porro iusto cupiditate neque ducimus perspiciatis, minima repellendus, ex beatae autem harum unde soluta dolores saepe. Voluptate nihil consectetur beatae!
-        Voluptates, voluptate non! Quaerat unde assumenda sint ratione, culpa dolore beatae corrupti ex, minus cum voluptatum accusantium deserunt necessitatibus odio quae, tempora vero a reiciendis adipisci dignissimos. Cumque, aperiam magni?
-        Ipsam error fuga excepturi eaque nostrum nihil ex sit nemo vel! Doloribus error nemo rem illum, doloremque commodi non voluptatem nulla sapiente architecto? Nulla ullam quidem quae! Tenetur, ducimus fuga.
-        Autem quia optio, enim magni consequuntur iste debitis sequi similique magnam totam quos eius impedit deserunt nam maxime alias vel. Sit molestias cupiditate earum eaque laboriosam nam iusto iste nulla.
-        Expedita veniam voluptas cupiditate dolor iusto officia in deleniti iste natus quibusdam? Deserunt necessitatibus, doloribus rem repellat fugit, quidem nobis tenetur nihil non incidunt veritatis dolore? Unde natus ullam pariatur.
-        Ha iure mollitia nam est quos! Ratione qui corrupti officia quos ipsum dolorum dolorem similique eum quas consectetur consequatur doloremque culpa, quae alias iste aliquam impedit reiciendis sapiente hic repudiandae!
-      
-       t
+   Bienvenidos a Lasu, el punto de encuentro entre la innovación y la gestión escolar eficiente. Estamos entusiasmados de tenerlos aquí, explorando nuestro robusto menú principal, diseñado para simplificar y potenciar su experiencia en el ámbito académico.
+            <br><br>
+En Lasu, no solo les ofrecemos una aplicación; les proporcionamos una herramienta completa y versátil que redefine la forma en que se administra la información escolar. Este menú es más que un simple punto de partida, es la clave para descubrir todas las funcionalidades que harán de la administración escolar una tarea ágil y sin complicaciones.
+
+Imaginen un espacio donde, con solo unos clics, puedan registrar las ausencias de los estudiantes de manera rápida y precisa, permitiéndoles un seguimiento detallado para una toma de decisiones más informada. Visualicen una plataforma que facilita la gestión de usuarios, desde docentes hasta personal administrativo, con una interfaz intuitiva y fácil de usar, ahorrando tiempo y esfuerzo.
+
+Y esto es solo el inicio.<br><br>
+En este menú, cada sección ha sido meticulosamente diseñada para maximizar la eficiencia y la usabilidad. Desde el seguimiento de la asistencia hasta el control detallado de las materias, Lasu está aquí para simplificar y mejorar todos los aspectos de la vida escolar.
+
+Queremos que cada clic en este menú sea una experiencia educativa en sí misma, una oportunidad para aprender y mejorar. Su opinión es fundamental para nosotros, así que los invitamos a compartir sus sugerencias y comentarios.<br><br> Estamos aquí para evolucionar y adaptarnos a sus necesidades cambiantes.
+
+Gracias por confiar en Lasu, donde la simplicidad digital se encuentra con la excelencia educativa. Este menú es su puerta de entrada a un nuevo estándar en la gestión escolar. ¡Bienvenidos a una experiencia educativa mejorada y simplificada! 🎓🚀
         </p>
 
 

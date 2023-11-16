@@ -172,7 +172,12 @@ li {
 .menu-horizontal li:hover .menu-vertical {
     display: block;
 }
-
+.menu-vertical li:hover{
+    display:block;
+}
+.menu-vertical > li:hover {
+    background-color: green;
+}
 
 
 body {

@@ -141,7 +141,7 @@
   <div id="contenedor">
     <div id="Nav">
       <ul class="menu">
-        <li><a href="prueba.html">Inicio</a></li>
+        <li><a href="MenuPrincipal.aspx">Inicio</a></li>
         <li><a href="">Usuario</a></li>
         <li><a href="https://drea.mep.go.cr/circuito-03/liceo-alejandro-aguilar-machado">Sitio web</a></li>
        
@@ -151,23 +151,19 @@
 
     <div id="contenido">
       <div id="section">
-        <h3>Bienvenido</h3><br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem facilis sint rerum cum optio similique
-          repellat explicabo dolorem numquam expedita iure porro voluptate, modi deserunt eaque vitae aut
-          aspernatur eum, ratione nulla aperiam magnam dolor quibusdam minima! Rerum ullam sunt obcaecati
-          soluta consequatur provident eius! Modi nulla itaque vero molestias?
-        </p>
-        <p><img src="" alt=""></p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda ratione molestias a esse commodi,
-          maiores sint natus eum temporibus quaerat mollitia doloribus in ex architecto explicabo inventore
-          magnam optio repellat vitae animi eveniet. Neque quos quae nihil consectetur nisi facere, incidunt
-          velit nobis a ipsa sequi sapiente aliquam tempore omnis, reiciendis delectus adipisci! Quam vel aut
-          ducimus nihil quo maiores!
-        </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nobis necessitatibus cum perferendis
-          quas? Pariatur at ea velit, fugit quo, amet iste officiis eligendi culpa laboriosam fuga aut quas ut
-          ad adipisci nisi quasi asperiores modi a neque eius suscipit molestiae? Dignissimos molestias neque
-          inventore, veniam sed expedita architecto mollitia?</p>
+        <h3>¡Saludos a nuestro valioso equipo de soporte!</h3><br>
+        <p>
+Es un placer darles la bienvenida a nuestra plataforma dedicada a hacer que su trabajo sea más eficiente y gratificante. Este extenso menú principal es la puerta de entrada a un conjunto integral de herramientas y recursos diseñados específicamente para potenciar su capacidad para brindar un soporte excepcional.<br> <br>
+
+En este espacio digital, no solo encontrarán una interfaz, sino una experiencia completa que redefinirá su enfoque hacia la gestión de soporte. Imaginen un entorno donde puedan abordar cada solicitud con organización y rapidez, con todas las herramientas necesarias al alcance de un clic.
+
+Desde la resolución de problemas técnicos hasta el seguimiento detallado de cada ticket de soporte, este menú es su portal hacia una experiencia de asistencia sin complicaciones.<br><br> Cada sección ha sido cuidadosamente diseñada para optimizar su productividad y garantizar una interacción fluida y eficiente con los usuarios.
+
+Aquí, cada función está destinada a ahorrar tiempo y maximizar la eficiencia en el manejo de solicitudes y problemas. Desde el registro de incidencias hasta la gestión de usuarios, nuestra plataforma es su aliado indispensable en la entrega de un soporte de primera categoría.<br><br>
+
+Queremos que cada clic sea una solución, cada sección una herramienta valiosa en su caja de recursos diarios. Su retroalimentación es esencial; les animamos a compartir sus ideas y sugerencias para hacer de esta plataforma un centro de soporte aún más efectivo.
+
+Gracias por confiar en nosotros, donde la simplicidad digital se encuentra con el soporte excepcional. Este menú es su acceso a un nuevo estándar en la gestión de soporte. ¡Bienvenidos a una experiencia de asistencia más eficaz y satisfactoria! 🛠️🤝</p>
       </div>
     </div>
 

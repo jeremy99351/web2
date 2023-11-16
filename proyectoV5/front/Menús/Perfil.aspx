@@ -166,7 +166,7 @@ function toggleVisibilityRegistro() {
             <div class="perfil-usuario-header">
               <div class="perfil-usuario-portada">
     <div class="perfil-usuario-avatar">
-        <img id="avatarPreview" src="http://localhost/multimedia/relleno/img-c9.png" alt="img-avatar">
+        <img id="avatarPreview" src="../../img/escudo.jfif" alt="img-avatar">
         <input type="file" id="fileAvatar" accept="image/*" style="display: none;" />
     </div>
     <button type="button" class="boton-avatar" onclick="cambiarAvatar()">
