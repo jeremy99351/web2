@@ -79,7 +79,7 @@
         }
     </style>
 
-    <link rel="stylesheet" href="../../css/lateral.css" />
+    <link rel="stylesheet" href="../../../css/lateral.css" />
 
 
     <title></title>

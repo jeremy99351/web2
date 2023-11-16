@@ -1,24 +1,20 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Net;
-using System.Net.Mail;
 
-public partial class front_FormularioSoporte : System.Web.UI.Page
+public partial class front_Menús_FormularioSoport : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
 
     }
 
-
-
-    protected void enviar(object sender, EventArgs e)
+    protected void Button1_Click(object sender, EventArgs e)
     {
         string destinatario = "hidalgoalvaroe@gmail.com"; // Dirección de correo de destino
 

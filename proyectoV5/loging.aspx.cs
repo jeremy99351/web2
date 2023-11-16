@@ -12,8 +12,12 @@ public partial class _Default : System.Web.UI.Page
 
     }
 
+   
     protected void btn_Click(object sender, EventArgs e)
     {
+       
+
+
         MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
         conexionBD.Open();
         MySqlCommand cmd = new MySqlCommand("select * from usuario_mantenimiento where cedula_mantenimiento ='"
@@ -25,14 +29,18 @@ public partial class _Default : System.Web.UI.Page
         MySqlCommand cmd2 = new MySqlCommand("select * from usuario_estudiante where cedula_estudiante ='"
           + this.txtUser.Text + "'" + "and correo ='" + this.txtPassword.Text + "'", conexionBD);
         MySqlDataReader registro = cmd.ExecuteReader();
+       
+        
+        
+       
 
-
+        
 
         if (registro.Read())
         {
 
             string valor = txtUser.Text.Trim();
-            Response.Redirect("front/docentes/registrarHorario.aspx?texto=" + valor);
+            Response.Redirect("front/Menús/MenuConfiguracion.aspx?texto=" + valor);
 
             //Response.Redirect("front/listaUsuarios.aspx?texto="+valor);
         }
@@ -40,11 +48,22 @@ public partial class _Default : System.Web.UI.Page
         {
             conexionBD.Close();
             conexionBD.Open();
-            cmd1.ExecuteReader();
-            string valor = txtUser.Text.Trim();
-            Response.Redirect("front/docentes/registrarHorario.aspx?texto=" + valor);
-
+            MySqlDataReader registro1 = cmd1.ExecuteReader();
+            if (registro1.Read())
+            {
+                string valor = txtUser.Text.Trim();
+                Response.Redirect("front/docentes/MenuPrincipal.aspx?texto=" + valor);
+            }
+            else
+            {
+                string valor = txtUser.Text.Trim();
+                Response.Redirect("front/estudiante/mostrar_aucencias.aspx?texto" + valor);
+            }
+           
         }
+        
+        
+       
 
         conexionBD.Close();
     }
