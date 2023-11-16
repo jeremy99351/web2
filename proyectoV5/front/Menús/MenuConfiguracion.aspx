@@ -25,7 +25,7 @@
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" />
           </svg>
-          <a href="">Registros</a>
+          <a href="../listaUsuarios.aspx">Registros</a>
         </li>
         <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="w-6 h-6">
@@ -62,9 +62,7 @@
           </svg>
           <a href="">Grupos</a>
         </li>
-        <li><a href="">Enlace 7</a></li>
-        <li><a href="">Enlace 8</a></li>
-        <li><a href="">Enlace 9</a></li>
+       
 
         <!--El horario estudiante se tomara de del horario del profesor-->
       </ul>
@@ -117,7 +115,7 @@
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
           </svg>
-          <a href="">Agregar</a>
+          <a href="../registrarUsuario.aspx">Agregar</a>
         </li>
         <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="w-6 h-6">
