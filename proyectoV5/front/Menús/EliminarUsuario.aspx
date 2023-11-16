@@ -6,7 +6,57 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    
-   <link rel="stylesheet" href="../css/EliminarU.css">
+    <style type="text/css">
+        table {
+
+            backdrop-filter: brightness(0.6);
+        }
+
+            table input {
+                width: 100%;
+                height: 45px;
+                background-color: lavender;
+                border: none;
+                outline: none;
+                border-radius: 40px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+                cursor: pointer;
+                font-size: 16px;
+                color: #333;
+                font-weight: 600;
+            }
+
+            table tr th {
+                padding: 15px;
+                border: 2px solid #000;
+                border-top: 2px solid #000;
+                width: 4%;
+                right: 90px;
+                background: lightblue;
+            }
+
+            table tr td {
+                padding: 15px;
+                border: 2px solid #000;
+                border-top: 2px solid #000;
+                width: 4%;
+                right: 150px;
+                background: transparent;
+                color: white;
+            }
+
+            table tbody {
+                margin-top: 15%;
+                padding: 15px;
+                border: 2px solid #000;
+                border-top: 2px solid #000;
+                width: 4%;
+                right: 150px;
+                background: transparent;
+                /* background: #F2F2F2; */
+            }
+    </style>
+   <link rel="stylesheet" href="../../css/EliminarU.css">
     <title>Eliminar Usuario</title>
 </head>
 <body>
