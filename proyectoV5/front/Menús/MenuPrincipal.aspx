@@ -23,7 +23,7 @@
         <div id="user-menu">
             <div id="user-avatar">
                 <!-- Agrega la imagen del avatar aquí -->
-                <img src="SpS.jpg" alt="Avatar del usuario" />
+                <img src="../../img/escudo.jfif" alt="Avatar del usuario" />
             </div>
             <div id="user-dropdown">
                 <span>Alvaro Hidalgo</span>
